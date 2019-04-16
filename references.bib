@@ -1,0 +1,4226 @@
+% Copyright (c) 2016-2018 Jakob Meng, <jakobmeng@web.de>
+%
+% Bibliography
+
+% fgmt_03_introduction.tex / "Notizen: Technologien Techniken Software.tex"
+% [1]\cite{DS98FoGP}
+% [2]\cite{MS88GP}
+% [3]\cite{A09oI}
+% [4]\cite{NPS14RftSL}
+% [5]\cite{P17PGP}
+% [6]\cite{P02TaPL}
+% [7]\cite{SPJ02TMPfH}
+% [8]\cite{C98GP}
+% [9]\cite{HJ03GHPaT}
+% [10]\cite{M78ToTPiP}
+% [11]\cite{GMW79ELCF}
+% [12]\cite{MQ15HoSML}
+% [13]\cite{L08PL}, S.9
+% [14]\cite{HHPJW07HoH}
+% [15]\cite{E97GPuK}
+% [16]\cite{CES97BO}
+% [17]\cite{GJLSW03CSoLSoGP}
+% [18]\cite{HJL06CAtGPiH}
+% [19]\cite{GL08ISaC}
+% [20]\cite{SL05LRfLGL}
+% [21]\cite{Y07PGPiO}
+% [22]\cite{S67FCiPL}
+% [23]\cite{G07DGP}
+% [24]\cite{YJJGKO11CDGLiH}
+% [25]\cite{JLMY08LfGPiH}
+% [26]\cite{WLQ10RGPAaT}
+% [27]\cite{S05LfGP}
+% [28]\cite{DS08ToFCoMP}
+% [29]\cite{S12Cpp0xCE}
+% [30]\cite{V06TiMP}
+% [31]\cite{H11TCaS}
+% [32]\cite{H84FP}
+% [33]\cite{M07QQH}
+% [34]\cite{HLO06SYBR}
+% [35]\cite{CEGVV00GPaAL}
+% [36]\cite{V05SLaTR}
+% [37]\cite{SR14MtGP}
+% [38]\cite{V05WiaL}
+% [39]\cite{CD06SVD}
+% [40]\cite{GK65SVD}
+% [41]\cite{GR70SVD}
+
+
+% Chapter "constrainted generics..." @ "Notizen: Technologien Techniken Software.tex"
+% [1]\cite{BJZSP08CppCHTC}
+% [2]\cite{GJLSW07ECSoLSoGP}
+% [3]\cite{SR03C}
+% [4]\cite{SGGWJL05C}
+% [5]\cite{S09RCD} 
+% [6]\cite{F16Cpp16}
+% [7]\cite{OGS08RWH}
+% [8]\cite{WB89AHP}
+% [9]\cite{HHPW07HoH}
+% [10]\cite{NNTC}
+% [11]\cite{H00HSoE} 
+% [12]\cite{GJLSW03CSoLSoGP}
+% [13]\cite{SGOMSLL02CBCLaOC}
+% [14]\cite{S17CFoGP}
+% [15]\cite{S16DC}
+% [16]\cite{R12SfAP}
+% [17]\cite{SS11DoCL}
+% [18]\cite{RSM09A}
+% [19]\cite{SL00CC}
+% [20]\cite{BR95S}
+% [21]\cite{DGLM95SWC}
+% [22]\cite{THEABG04WJ}
+% [23]\cite{GJSDL06C}
+% [24]\cite{RS06SCC}
+% [25]\cite{SS12CD}
+% [26]\cite{W92CL}
+% [27]\cite{W09RLT}
+% [28]\cite{BJZS10CCHTC}
+% [29]\cite{SL05ELSfGP}
+% [30]\cite{G06FAC}
+% [31]\cite{GL08ISaC}
+% [32]\cite{MSSL99TCL}
+% [33]\cite{SGM00ACR}
+% [34]\cite{KM92T}
+% [35]\cite{M98TCDL}
+% [36]\cite{KMS81OaAS}
+% [37]\cite{SR14MtGP}
+% [38]\cite{HS11gtl}
+% [39]\cite{J00TCwFD}
+% [40]\cite{ZPIBS07MLLD}
+% [41]\cite{JLSW03AoCPfGP}
+% [42]\cite{S09SC}
+% [43]\cite{S12Cpp0xCE}
+% [44]\cite{W91AVI}
+% [45]\cite{A09oI}
+% [46]\cite{CE14EDoTE}
+% [47]\cite{H11TCaS}
+% [48]\cite{PJM97TC}
+% [49]\cite{JMS10PCC}
+% [50]\cite{MJP07RPGP}
+% [51]\cite{PPMS10DAS}
+
+% Chapter "C++ Templates" @ "Notizen: Technologien Techniken Software.tex"
+
+% [1]\cite{R01IoEoCO}
+% [2]\cite{MANY06CPERF}
+% [3]\cite{S12Cpp0xCE}
+% [4]\cite{GL09FfTRMP}
+% [5]\cite{M13RM}
+% [6]\cite{G08SCaR}
+% [7]\cite{CE14EDoTE}
+% [8]\cite{PMS06DCTM}
+
+% "Notizen: Mathematische Grundlagen.txt"
+%TODO
+
+% James C. Dehnert and Alexander Stepanov (1998): Fundamentals of Generic Programming
+@book{DS00FoGP,
+ author    = {James C. Dehnert and Alexander Stepanov},
+ editor    = {Mehdi Jazayeri and Rüdiger G. K. Loos and David R. Musser},
+ title     = {Fundamentals of Generic Programming},
+ bookTitle = {Generic Programming: International Seminar on Generic Programming Dagstuhl Castle, Germany, April 27--May 1, 1998 Selected Papers},
+ year      = {2000},
+ publisher = {Springer Berlin Heidelberg},
+ address   = {Berlin, Heidelberg},
+ pages     = {1--11},
+ abstract  = {Generic programming depends on the decomposition of programs into components which may be developed separately and combined arbitrarily, subject only to well-defined interfaces. Among the interfaces of interest, indeed the most pervasively and unconsciously used, are the fundamental operators common to all C++ built-in types, as extended to user-defined types; e.g., copy constructors, assignment, and equality. We investigate the relations which must hold among these operators to preserve consistency with their semantics for the built-in types and with the expectations of programmers. We can produce an axiomatization of these operators which yields the required consistency with built-in types, matches the intuitive expectations of programmers, and also reflects our underlying mathematical expectations.},
+ isbn      = {978-3-540-39953-7},
+ doi       = {10.1007/3-540-39953-4_1},
+ url       = {https://doi.org/10.1007/3-540-39953-4_1}
+}
+
+@inproceedings{DS98FoGP,
+ author    = {James C. Dehnert and Alexander A. Stepanov},
+ title     = {Fundamentals of Generic Programming},
+ booktitle = {Generic Programming, International Seminar on Generic Programming, Dagstuhl Castle, Germany, April 27 - May 1, 1998, Selected Papers},
+ pages     = {1--11},
+ year      = {1998},
+ crossref  = {DBLP:conf/dagstuhl/1998gp},
+ url       = {https://doi.org/10.1007/3-540-39953-4_1},
+ doi       = {10.1007/3-540-39953-4_1},
+ timestamp = {Wed, 24 May 2017 15:40:44 +0200},
+ biburl    = {http://dblp.uni-trier.de/rec/bib/conf/dagstuhl/DehnertS98},
+ bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+% David R. Musser and Alexander A. Stepanov (1988): Generic Programming
+@inproceedings{MS88GP,
+  author    = {David R. Musser and Alexander A. Stepanov},
+  title     = {Generic Programming},
+  booktitle = {Symbolic and Algebraic Computation, International Symposium ISSAC'88, Rome, Italy, July 4-8, 1988, Proceedings},
+  pages     = {13--25},
+  year      = {1988},
+  crossref  = {DBLP:conf/issac/1988},
+  url       = {https://doi.org/10.1007/3-540-51084-2_2},
+  doi       = {10.1007/3-540-51084-2_2},
+  timestamp = {Fri, 19 May 2017 13:10:48 +0200},
+  biburl    = {http://dblp.uni-trier.de/rec/bib/conf/issac/MusserS88},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+% Andrei Alexandrescu (2009): On Iteration
+@online{A09oI,
+ author  = {Andrei Alexandrescu},
+ year    = {2009},
+ title   = {On Iteration},
+ url     = {http://www.informit.com/articles/printerfriendly/1407357},
+ urldate = {2016-03-31}
+}
+%url     = {https://web.archive.org/web/20160331232212/http://www.informit.com/articles/printerfriendly/1407357},
+
+% Eric Niebler, Sean Parent, Andrew Sutton: Ranges for the Standard Library (2014)
+%  https://ericniebler.github.io/std/wg21/D4128.html
+%  http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4128.html
+@techreport{NPS14RftSL,
+ author      = {Eric Niebler and Sean Parent and Andrew Sutton},
+ title       = {Ranges for the Standard Library, Revision 1},
+ institution = {Programming Language C++, Library Working Group},
+ number      = {N4128},
+ year        = {2014},
+ url         = {http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4128.html},
+ urldate     = {2017-08-16},
+}
+
+% Andreas Priesnitz: "2017-02-06 Auszug aus Projektskizze zu Generischer Programmierung.pdf"
+@unpublished{P17PGP,
+ author = {Andreas Priesnitz},
+ title  = {Auszug aus Projektskizze zu Generischer Programmierung},
+ note   = {Diskretisierung bei der Simulation Velomobils},
+ date   = {2017-02-06},
+}
+
+% Types and Programming Languages by Benjamin C. Pierce (2002)
+% Benjamin C. Pierce (2002): Types and Programming Languages
+@book{P02TaPL,
+ author    = {Benjamin C. Pierce},
+ title     = {Types and Programming Languages},
+ year      = {2002},
+ isbn      = {0262162091, 9780262162098},
+ edition   = {1st},
+ publisher = {The MIT Press},
+} 
+
+% Tim Sheard and Simon Peyton Jones (2002): Template metaprogramming for Haskell / Template metaprogramming for Haskell by Tim Sheard and Simon Peyton Jones (2002)
+@article{SPJ02TMPfH,
+ author     = {Tim Sheard and Simon Peyton Jones},
+ title      = {Template Metaprogramming for Haskell},
+ journal    = {SIGPLAN Not.},
+ issue_date = {December 2002},
+ volume     = {37},
+ number     = {12},
+ month      = dec,
+ year       = {2002},
+ issn       = {0362-1340},
+ pages      = {60--75},
+ numpages   = {16},
+ url        = {http://doi.acm.org/10.1145/636517.636528},
+ doi        = {10.1145/636517.636528},
+ acmid      = {636528},
+ publisher  = {ACM},
+ address    = {New York, NY, USA},
+ keywords   = {Meta programming, templates},
+} 
+
+% Krzysztof Czarnecki (1998): Generative Programming: Principles and Techniques of Software Engineering Based on Automated Configuration and Fragment-Based Component Models
+@phdthesis{C98GP,
+ author    = {Krzysztof Czarnecki},
+ month     = {October},
+ school    = {Technical University of Ilmenau},
+ title     = {Generative Programming: Principles and Techniques of Software Engineering Based on Automated Configuration and Fragment-Based Component Models},
+ url       = {http://www.prakinf.tu-ilmenau.de/~czarn/diss/diss.pdf},
+ year      = 1998,
+}
+
+% Ralf Hinze and Johan Jeuring (2003): Generic Haskell: practice and theory
+@inproceedings{HJ03GHPaT,
+ author    = {Ralf Hinze and Johan Jeuring},
+ title     = {Generic Haskell: Practice and Theory},
+ booktitle = {Generic Programming - Advanced Lectures},
+ pages     = {1--56},
+ year      = {2003},
+ url       = {https://doi.org/10.1007/978-3-540-45191-4_1},
+ doi       = {10.1007/978-3-540-45191-4_1},
+ biburl    = {http://dblp.uni-trier.de/rec/bib/conf/ac/HinzeJ03},
+ bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+% Robin Milner (1978): A Theory of Type Polymorphism in Programming
+@article{M78ToTPiP,
+  abstract = {{The aim of this work is largely a practical one. A widely employed style of programming, particularly in structure-processing languages which impose no discipline of types, entails defining procedures which work well on objects of a wide variety. We present a formal type discipline for such polymorphic procedures in the context of a simple programming language, and a compile time type-checking algorithm }},
+  author   = {Robin Milner},
+  biburl   = {https://www.bibsonomy.org/bibtex/209953e74d4eb966ce994e58792cd5914/gdmcbain},
+  doi      = {10.1016/0022-0000(78)90014-4},
+  journal  = {Journal of Computer and System Sciences},
+  month    = dec,
+  number   = 3,
+  pages    = {348--375},
+  title    = {A theory of type polymorphism in programming},
+  url      = {http://dx.doi.org/10.1016/0022-0000(78)90014-4},
+  volume   = {17},
+  year     = {1978},
+}
+
+% Michael J. Gordon and Arthur J. Milner and Christopher P. Wadsworth (1979): Edinburgh LCF: A Mechanised Logic of Computation
+@book{GMW79ELCF,
+ author    = {Michael J. C. Gordon and Robin Milner and Christopher P. Wadsworth},
+ title     = {Edinburgh {LCF}: A Mechanised Logic of Computation},
+ year      = 1979,
+ publisher = {Springer-Verlag Berlin Heidelberg},
+ series    = {Lecture Notes in Computer Science (LNCS) 78},
+ volume    = 78,
+ isbn      = {978-3-540-38526-4},
+ doi       = {10.1007/3-540-09724-4},
+ issn      = {0302-9743},
+ edition   = 1,
+ pages     = {VIII, 161}
+}
+
+% David MacQueen (2015): THE HISTORY OF STANDARD ML: IDEAS, PRINCIPLES, CULTURE
+@misc{MQ15HoSML,
+ author       = {David MacQueen},
+ title        = {THE HISTORY OF STANDARD ML: IDEAS, PRINCIPLES, CULTURE},
+ year         = 2015,
+ organization = {University of Chicago},
+ date         = {2015-09-03}
+}
+
+% Kent D. Lee (2008): PROGRAMMING LANGUAGES: AN ACTIVE LEARNING APPROACH
+@book{L08PL,
+ title     = {Programming Languages: An Active Learning Approach},
+ author    = {Kent D. Lee},
+ year      = {2008},
+ isbn      = {978-0-387-79422-8},
+ publisher = {Springer Science \& Business Media},
+ address   = {Berlin Heidelberg},
+}
+
+% Paul Hudak and John Hughes and Simon Peyton Jones and Philip Wadler (2007): A History of Haskell: Being Lazy With Class
+@inproceedings{HHPJW07HoH,
+ author    = {Hudak, Paul and Hughes, John and Peyton Jones, Simon and Wadler, Philip},
+ title     = {A History of Haskell: Being Lazy with Class},
+ booktitle = {Proceedings of the Third ACM SIGPLAN Conference on History of Programming Languages},
+ series    = {HOPL III},
+ year      = {2007},
+ isbn      = {978-1-59593-766-7},
+ location  = {San Diego, California},
+ pages     = {12-1--12-55},
+ url       = {http://doi.acm.org/10.1145/1238844.1238856},
+ doi       = {10.1145/1238844.1238856},
+ acmid     = {1238856},
+ publisher = {ACM},
+ address   = {New York, NY, USA},
+} 
+
+% U. W. Eisenecker. Generative Programmierung und Komponenten. In OBJEKTspektrum, Nr. 3, Mai/Juni 1997, S. 80-84, 
+@article{E97GPuK,
+ author       = {Ulrich W. Eisenecker},
+ title        = {C++: Generative Programmierung und Komponenten},
+ journaltitle = {OBJEKTspektrum},
+ issuetitle   = {Komponentenbasierte Softwareentwicklung},
+ year         = 1997,
+ volume       = 3,
+ issue        = {Mai/Juni},
+ pages        = {80--84},
+ url          = {https://www.sigs-datacom.de/fachzeitschriften/objektspektrum/archiv/artikelansicht/artikel-titel/c-generative-programmierung-und-komponenten.html},
+}
+
+% Beyond Objects: Generative Programming by Krzysztof Czarnecki and Ulrich W. Eisenecker and Patrick Steyaert (1997)
+@inproceedings{CES97BO,
+ author    = {Krzysztof Czarnecki and Ulrich W. Eisenecker and Patrick Steyaert},
+ title     = {Beyond Objects: Generative Programming},
+ year      = 1997,
+ location  = {Jyväskylä, Finland},
+ date      = {1997-06-10},
+ booktitle = {Proceedings of the 11st European Conference Object-Oriented Programming (ECOOP'97). Workshop on Aspect-Oriented Programming},
+}
+% booktitle = {ECOOP'97 Workshop on Aspect-Oriented Programming}, pages={5--14},
+
+% A comparative study of language support for generic programming by Ronald Garcia and Jaakko Jarvi and Andrew Lumsdaine and Jeremy G. Siek and Jeremiah Willcock (2003)
+@inproceedings{GJLSW03CSoLSoGP,
+ author    = {Garcia, Ronald and Jarvi, Jaakko and Lumsdaine, Andrew and Siek, Jeremy G. and Willcock, Jeremiah},
+ title     = {A Comparative Study of Language Support for Generic Programming},
+ booktitle = {Proceedings of the 18th Annual ACM SIGPLAN Conference on Object-oriented Programing, Systems, Languages, and Applications},
+ series    = {OOPSLA '03},
+ year      = {2003},
+ isbn      = {1-58113-712-5},
+ location  = {Anaheim, California, USA},
+ pages     = {115--134},
+ numpages  = {20},
+ url       = {http://doi.acm.org/10.1145/949305.949317},
+ doi       = {10.1145/949305.949317},
+ acmid     = {949317},
+ publisher = {ACM},
+ address   = {New York, NY, USA},
+ keywords  = {C\#, C++, Eiffel, Haskell, Java, generic programming, generics, polymorphism, standard ML},
+}
+
+% Comparing Approaches to Generic Programming in Haskell by Ralf Hinze and Johan Jeuring and Andres Löh (2006)
+@inproceedings{HJL06CAtGPiH,
+ author    = {Hinze, Ralf and Jeuring, Johan and Löh, Andres},
+ title     = {Comparing Approaches to Generic Programming in Haskell},
+ booktitle = {Proceedings of the 2006 International Conference on Datatype-generic Programming},
+ series    = {SSDGP'06},
+ year      = {2007},
+ isbn      = {3-540-76785-1, 978-3-540-76785-5},
+ location  = {Nottingham, UK},
+ pages     = {72--149},
+ numpages  = {78},
+ url       = {http://dl.acm.org/citation.cfm?id=1782894.1782896},
+ acmid     = {1782896},
+ publisher = {Springer-Verlag},
+ address   = {Berlin, Heidelberg},
+}
+
+% Integrating Semantics and Compilation: Using C++ concepts to develop robust and efficient reusable libraries by Peter Gottschling and Andrew Lumsdaine (2008)
+@inproceedings{GL08ISaC,
+ author    = {Gottschling, Peter and Lumsdaine, Andrew},
+ title     = {Integrating Semantics and Compilation: Using C++ Concepts to Develop Robust and Efficient Reusable Libraries},
+ booktitle = {Proceedings of the 7th International Conference on Generative Programming and Component Engineering},
+ series = {GPCE '08},
+ year = {2008},
+ isbn = {978-1-60558-267-2},
+ location = {Nashville, TN, USA},
+ pages = {67--76},
+ numpages = {10},
+ url = {http://doi.acm.org/10.1145/1449913.1449925},
+ doi = {10.1145/1449913.1449925},
+ acmid = {1449925},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+% Language Requirements for Large-Scale Generic Libraries by Jeremy Siek and Andrew Lumsdaine (2005)
+@inproceedings{SL05LRfLGL,
+ author = {Siek, Jeremy and Lumsdaine, Andrew},
+ title = {Language Requirements for Large-Scale Generic Libraries},
+ booktitle = {Proceedings of the 4th International Conference on Generative Programming and Component Engineering},
+ series = {GPCE'05},
+ year = {2005},
+ isbn = {3-540-29138-5, 978-3-540-29138-1},
+ location = {Tallinn, Estonia},
+ pages = {405--421},
+ numpages = {17},
+ url = {http://dx.doi.org/10.1007/11561347_27},
+ doi = {10.1007/11561347_27},
+ acmid = {2156797},
+ publisher = {Springer-Verlag},
+ address = {Berlin, Heidelberg},
+}
+
+% Practical Generic Programming in OCaml by Jeremy Yallop (2007)
+@inproceedings{Y07PGPiO,
+ author = {Yallop, Jeremy},
+ title = {Practical Generic Programming in OCaml},
+ booktitle = {Proceedings of the 2007 Workshop on Workshop on ML},
+ series = {ML '07},
+ year = {2007},
+ isbn = {978-1-59593-676-9},
+ location = {Freiburg, Germany},
+ pages = {83--94},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/1292535.1292548},
+ doi = {10.1145/1292535.1292548},
+ acmid = {1292548},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+% Fundamental Concepts in Programming Languages by Christopher Strachey (1967 and 2000)
+@article{S67FCiPL,
+ author = {Strachey, Christopher},
+ title = {Fundamental Concepts in Programming Languages},
+ journal = {Higher Order Symbol. Comput.},
+ issue_date = {April 2000},
+ volume = {13},
+ number = {1-2},
+ month = apr,
+ year = {2000},
+ issn = {1388-3690},
+ pages = {11--49},
+ numpages = {39},
+ url = {http://dx.doi.org/10.1023/A:1010000313106},
+ doi = {10.1023/A:1010000313106},
+ acmid = {609208},
+ publisher = {Kluwer Academic Publishers},
+ address = {Hingham, MA, USA},
+} 
+
+% Datatype-Generic Programming by Jeremy Gibbons (2007)
+@inbook{G07DGP,
+ author = {Gibbons, Jeremy},
+ editor = {Backhouse, Roland and Gibbons, Jeremy and Hinze, Ralf and Jeuring, Johan},
+ title = {Datatype-Generic Programming},
+ bookTitle = {Datatype-Generic Programming: International Spring School, SSDGP 2006, Nottingham, UK, April 24--27, 2006, Revised Lectures},
+ year = {2007},
+ publisher = {Springer Berlin Heidelberg},
+ address = {Berlin, Heidelberg},
+ pages = {1--71},
+ abstract = {Generic programming aims to increase the flexibility of programming languages, by expanding the possibilities for parametrization --- ideally, without also expanding the possibilities for uncaught errors. The term means different things to different people: parametric polymorphism, data abstraction, meta-programming, and so on. We use it to mean polytypism, that is, parametrization by the shape of data structures rather than their contents. To avoid confusion with other uses, we have coined the qualified term datatype-generic programming for this purpose. In these lecture notes, we expand on the definition of datatype-generic programming, and present some examples of datatype-generic programs. We also explore the connection with design patterns in object-oriented programming; in particular, we argue that certain design patterns are just higher-order datatype-generic programs.},
+ isbn = {978-3-540-76786-2},
+ doi = {10.1007/978-3-540-76786-2_1},
+ url = {https://doi.org/10.1007/978-3-540-76786-2_1},
+}
+
+% Comparing Datatype Generic Libraries in Haskell by Alexey Rodriguez Yakushev and Johan Jeuring and Patrik Jansson and Alex Gerdes and Oleg Kiselyov and Bruno C. D. S. Oliveira (2011)
+@article{YJJGKO11CDGLiH,
+ title = {Comparing Datatype Generic Libraries in Haskell},
+ author = {Alexey Rodriguez Yakushev and Johan Jeuring and Patrik Jansson and Alex Gerdes and Oleg Kiselyov and Bruno C. D. S. Oliveira},
+ year = {2011},
+ journal = {Journal of Functional Programming},
+}
+
+% Libraries for Generic Programming in Haskell by Johan Jeuring and Sean Leather and José Pedro Magalães and Alexey Rodriguez Yakushev (2008)
+@inproceedings{JLMY08LfGPiH,
+ author    = {Johan Jeuring and Sean Leather and José Pedro Magalães and Alexey Rodriguez Yakushev},
+ title     = {Libraries for Generic Programming in Haskell},
+ booktitle = {Advanced Functional Programming, 6th International School, {AFP} 2008, Heijen, The Netherlands, May 2008, Revised Lectures},
+ pages     = {165--229},
+ year      = {2008},
+ crossref  = {DBLP:conf/afp/2008},
+ url       = {https://doi.org/10.1007/978-3-642-04652-0_4},
+ doi       = {10.1007/978-3-642-04652-0_4},
+ timestamp = {Tue, 23 May 2017 01:06:09 +0200},
+ biburl    = {http://dblp.uni-trier.de/rec/bib/conf/afp/JeuringLMY08},
+ bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+% Reusable, Generic Program Analyses and Transformations by Jeremiah James Willcock and Andrew Lumsdaine and Daniel J. Quinlan (2010)
+@inproceedings{WLQ10RGPAaT,
+ author = {Jeremiah James Willcock and Andrew Lumsdaine and Daniel J. Quinlan},
+ title = {Reusable, Generic Program Analyses and Transformations},
+ booktitle = {Proceedings of the Eighth International Conference on Generative Programming and Component Engineering},
+ series = {GPCE '09},
+ year = {2009},
+ isbn = {978-1-60558-494-2},
+ location = {Denver, Colorado, USA},
+ pages = {5--14},
+ numpages = {10},
+ url = {http://doi.acm.org/10.1145/1621607.1621611},
+ doi = {10.1145/1621607.1621611},
+ acmid = {1621611},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+% A Language for Generic Programming by Jeremy G. Siek (2005)
+@phdthesis{S05LfGP,
+ author = {Jeremy G. Siek},
+ advisor = {Lumsdaine, Andrew},
+ title = {A Language for Generic Programming},
+ year = {2005},
+ isbn = {0-542-30809-6},
+ note = {AAI3183499},
+ publisher = {Indiana University},
+ address = {Indianapolis, IN, USA},
+}
+
+% TAXONOMY OF THE FUNDAMENTAL CONCEPTS OF METAPROGRAMMING by Robertas Damaševičius and Vytautas Štuikys (2008)
+@inbook{DS08ToFCoMP,
+ author={Robertas Damaševičius and Vytautas Štuikys},
+ title = {Taxonomy of Fundamental Concepts of Meta-Programming},
+ bookTitle = {Meta-Programming and Model-Driven Meta-Program Development: Principles, Processes and Techniques},
+ year = {2013},
+ publisher = {Springer London},
+ address = {London},
+ pages = {17--29},
+ isbn = {978-1-4471-4126-6},
+ doi = {10.1007/978-1-4471-4126-6_2},
+ url = {https://doi.org/10.1007/978-1-4471-4126-6_2},
+}
+
+% The C++ 0x Concepts Effort by Jeremy G. Siek (2011)
+@inbook{S12Cpp0xCE,
+ author = {Jeremy G. Siek},
+ editor = {Gibbons, Jeremy},
+ title = {The C++0x ``Concepts'' Effort},
+ bookTitle = {Generic and Indexed Programming: International Spring School, SSGIP 2010, Oxford, UK, March 22-26, 2010, Revised Lectures},
+ year = {2012},
+ publisher = {Springer Berlin Heidelberg},
+ address = {Berlin, Heidelberg},
+ pages = {175--216},
+ abstract = {C++0x is the working title for the revision of the ISO standard of the C++ programming language that was originally planned for release in 2009 but that was delayed to 2011. The largest language extension in C++0x was ``concepts'', that is, a collection of features for constraining template parameters. In September of 2008, the C++ standards committee voted the concepts extension into C++0x, but then in July of 2009, the committee voted the concepts extension back out of C++0x.},
+ isbn = {978-3-642-32202-0},
+ doi = {10.1007/978-3-642-32202-0_4},
+ url = {https://doi.org/10.1007/978-3-642-32202-0_4}
+}
+
+% Tradeoffs in Metaprogramming by Todd L. Veldhuizen (2006)
+@inproceedings{V06TiMP,
+ author = {Veldhuizen, Todd L.},
+ title = {Tradeoffs in Metaprogramming},
+ booktitle = {Proceedings of the 2006 ACM SIGPLAN Symposium on Partial Evaluation and Semantics-based Program Manipulation},
+ series = {PEPM '06},
+ year = {2006},
+ isbn = {1-59593-196-1},
+ location = {Charleston, South Carolina},
+ pages = {150--159},
+ numpages = {10},
+ url = {http://doi.acm.org/10.1145/1111542.1111569},
+ doi = {10.1145/1111542.1111569},
+ acmid = {1111569},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+% Type Classes and Subtyping: Two different Approaches of Polymorphism by Lars Hupel (2011)
+@misc{H11TCaS,
+ author       = {Lars Hupel},
+ title        = {Type Classes and Subtyping},
+ subtitle     = {Two different Approaches of Polymorphism},
+ year         = 2011,
+ organization = {Technische Universität München},
+ date         = {2011-06-20}
+}
+
+% Why Functional Programming Matters by John Hughes (1984)
+@article{H84FP,
+ author = {John Hughes},
+ title = {Why Functional Programming Matters},
+ journal = {The Computer Journal},
+ year = {1984},
+ volume = {32},
+ pages = {98--107},
+}
+
+Why It’s Nice to be Quoted: Quasiquoting for Haskell by Geoffrey B. Mainland (2007)
+@inproceedings{M07QQH,
+ author = {Mainland, Geoffrey},
+ title = {Why It’s Nice to be Quoted: Quasiquoting for Haskell},
+ booktitle = {Proceedings of the ACM SIGPLAN Workshop on Haskell Workshop},
+ series = {Haskell '07},
+ year = {2007},
+ isbn = {978-1-59593-674-5},
+ location = {Freiburg, Germany},
+ pages = {73--82},
+ numpages = {10},
+ url = {http://doi.acm.org/10.1145/1291201.1291211},
+ doi = {10.1145/1291201.1291211},
+ acmid = {1291211},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+% "Scrap Your Boilerplate" Reloaded by Ralf Hinze and Andres Löh and Bruno C. d. S. Oliveira (2006)
+@inproceedings{HLO06SYBR,
+ author = {Hinze, Ralf and Löh, Andres and Oliveira, Bruno C. d. S.},
+ title = {``Scrap Your Boilerplate'' Reloaded},
+ booktitle = {Proceedings of the 8th International Conference on Functional and Logic Programming},
+ series = {FLOPS'06},
+ year = {2006},
+ isbn = {3-540-33438-6, 978-3-540-33438-5},
+ location = {Fuji-Susono, Japan},
+ pages = {13--29},
+ numpages = {17},
+ url = {http://dx.doi.org/10.1007/11737414_3},
+ doi = {10.1007/11737414_3},
+ acmid = {2100076},
+ publisher = {Springer-Verlag},
+ address = {Berlin, Heidelberg},
+}
+
+% Generative Programming and Active Libraries by Krzysztof Czarnecki and Ulrich Eisenecker and Robert Glück and David Vandevoorde and Todd Veldhuizen (2000)
+@inproceedings{CEGVV00GPaAL,
+ author = {Czarnecki, Krzysztof and Eisenecker, Ulrich W. and Gl\"{u}ck, Robert and Vandevoorde, David and Veldhuizen, Todd L.},
+ title = {Generative Programming and Active Libraries},
+ booktitle = {Selected Papers from the International Seminar on Generic Programming},
+ year = {2000},
+ isbn = {3-540-41090-2},
+ pages = {25--39},
+ numpages = {15},
+ url = {http://dl.acm.org/citation.cfm?id=647373.724187},
+ acmid = {724187},
+ publisher = {Springer-Verlag},
+ address = {London, UK},
+} 
+
+% Software Libraries and Their Reuse: Entropy, Kolmogorov Complexity, and Zipf's law by Todd L. Veldhuizen (2005)
+@article{V05SLaTR,
+ author    = {Todd L. Veldhuizen},
+ title     = {Software Libraries and Their Reuse: Entropy, Kolmogorov Complexity, and Zipf's Law},
+ journal   = {CoRR},
+ volume    = {abs/cs/0508023},
+ year      = {2005},
+ url       = {http://arxiv.org/abs/cs/0508023},
+ timestamp = {Wed, 07 Jun 2017 14:43:07 +0200},
+ biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/abs-cs-0508023},
+ bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+% From Mathematics to Generic Programming by Alexander Alexandrowitsch Stepanow and Daniel E. Rose (2014)
+@book{SR14MtGP,
+ author = {Stepanov, Alexander A. and Rose, Daniel E.},
+ title = {From Mathematics to Generic Programming},
+ year = {2014},
+ isbn = {0321942043, 9780321942043},
+ edition = {1st},
+ publisher = {Addison-Wesley Professional},
+}
+
+% What is a library? by Todd Veldhuizen (2005)
+@misc{V05WiaL,
+ author       = {Todd Veldhuizen},
+ title        = {What is a library?},
+ year         = 2005,
+ organization = {Chalmers Technical University},
+ date         = {2005-03-09}
+}
+
+% Computation of the Singular Value Decomposition by Alan Kaylor Cline and Inderjit S. Dhillon (2006)
+@book{CD06SVD,
+ author = {Alan Kaylor Cline and Inderjit S. Dhillon},
+ title = {Computation of the Singular Value Decomposition},
+ booktitle = {Handbook of Linear Algebra},
+ booksubtitle = {Discrete Mathematics and Its Applications},
+ publisher = {Chapman and Hall/CRC Press},
+ page = {{45–1}--{45–13}},
+ year = {2006},
+ isbn = {978-1-58488-510-8},
+ doi = {10.1201/9781420010572},
+ month = jan,
+}
+
+% Calculating the Singular Values and Pseudo-Inverse of a Matrix by Gene Howard Golub and William Morton Kahan (1965)
+@article{GK65SVD,
+ author = {Gene Howard Golub and William Morton Kahan},
+ title = {Calculating the Singular Values and Pseudo-Inverse of a Matrix},
+ journal = {Journal of the Society for Industrial and Applied Mathematics, Series B: Numerical Analysis},
+ volume = {2},
+ number = {2},
+ pages = {205--224},
+ year = {1965},
+ doi = {10.1137/0702016},
+ publisher = {SIAM},
+ url = {https://doi.org/10.1137/0702016},
+ eprint = {https://doi.org/10.1137/0702016}
+}
+
+% Singular Value Decomposition and Least Squares Solutions by Gene Howard Golub and Christian Reinsch (1970)
+@article{GR70SVD,
+ author = {Golub, Gene Howard and Reinsch, Christian},
+ title = {Singular Value Decomposition and Least Squares Solutions},
+ journal = {Numer. Math.},
+ issue_date = {April 1970},
+ volume = {14},
+ number = {5},
+ month = apr,
+ year = {1970},
+ issn = {0029-599X},
+ pages = {403--420},
+ numpages = {18},
+ url = {http://dx.doi.org/10.1007/BF02163027},
+ doi = {10.1007/BF02163027},
+ acmid = {2718152},
+ publisher = {Springer-Verlag New York, Inc.},
+ address = {Secaucus, NJ, USA},
+}
+
+% Dynamic mode decomposition of numerical and experimental data by Peter J. Schmid (2010)
+@article{S10DMD, 
+ author={Schmid, Peter J.}, 
+ title={Dynamic mode decomposition of numerical and experimental data},
+ volume={656}, 
+ doi={10.1017/S0022112010001217},
+ journal={Journal of Fluid Mechanics}, 
+ publisher={Cambridge University Press},
+ year={2010}, 
+ pages={5–28},
+}
+
+% Applications of the dynamic mode decomposition by Peter J. Schmid and Larry Li and Matthew P. Juniper and Oliver Pust (2010)
+@article{SLJP10ADMD,
+ author= {Peter J. Schmid and Larry Li and Matthew P. Juniper and Oliver Pust},
+ title= {Applications of the dynamic mode decomposition},
+ journal= {Theoretical and Computational Fluid Dynamics},
+ year= {2011},
+ month= {Jun},
+ day= {01},
+ volume= {25},
+ number= {1},
+ pages= {249--259},
+ issn= {1432-2250},
+ doi= {10.1007/s00162-010-0203-9},
+ url= {https://doi.org/10.1007/s00162-010-0203-9}
+}
+
+% Helical-wave decomposition and applications to channel turbulence with streamwise rotation by Yantao Yang and W.-D. SU and Jie-Zhi Wu (2010)
+@article{YSW10HWDA,
+ title={Helical-wave decomposition and applications to channel turbulence with streamwise rotation},
+ volume={662},
+ doi={10.1017/S0022112010003071}, 
+ journal={Journal of Fluid Mechanics}, 
+ publisher={Cambridge University Press}, 
+ author={Yantao Yang and W.-D. SU and Jie-Zhi Wu}, 
+ year={2010}, 
+ pages={91–122}
+}
+
+% Reusable, Generic Program Analyses and Transformations by Jeremiah James Willcock and Andrew Lumsdaine and Daniel J. Quinlan (2010)
+@inproceedings{WLQ10RGPAaT,
+ author = {Willcock, Jeremiah James and Lumsdaine, Andrew and Quinlan, Daniel J.},
+ title = {Reusable, Generic Program Analyses and Transformations},
+ booktitle = {Proceedings of the Eighth International Conference on Generative Programming and Component Engineering},
+ series = {GPCE '09},
+ year = {2009},
+ isbn = {978-1-60558-494-2},
+ location = {Denver, Colorado, USA},
+ pages = {5--14},
+ numpages = {10},
+ url = {http://doi.acm.org/10.1145/1621607.1621611},
+ doi = {10.1145/1621607.1621611},
+ acmid = {1621611},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+% Toward Foundations for Type-Reflective Metaprogramming by Ronald Garcia and Andrew Lumsdaine (2009)
+@inproceedings{GL09FfTRMP,
+ author = {Garcia, Ronald and Lumsdaine, Andrew},
+ title = {Toward Foundations for Type-Reflective Metaprogramming},
+ booktitle = {Proceedings of the Eighth International Conference on Generative Programming and Component Engineering},
+ series = {GPCE '09},
+ year = {2009},
+ isbn = {978-1-60558-494-2},
+ location = {Denver, Colorado, USA},
+ pages = {25--34},
+ numpages = {10},
+ url = {http://doi.acm.org/10.1145/1621607.1621613},
+ doi = {10.1145/1621607.1621613},
+ acmid = {1621613},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+% Language embeddings that preserve staging and safety by Todd L. Veldhuizen (2005)
+@article{V05LE,
+ author = {Veldhuizen, Todd L.},
+ title = {Language Embeddings That Preserve Staging and Safety},
+ journal = {Nordic J. of Computing},
+ issue_date = {April 2005},
+ volume = {12},
+ number = {2},
+ month = apr,
+ year = {2005},
+ issn = {1236-6064},
+ pages = {189--198},
+ numpages = {10},
+ url = {http://dl.acm.org/citation.cfm?id=1124427.1124434},
+ acmid = {1124434},
+ publisher = {Publishing Association Nordic Journal of Computing},
+ address = {Finland},
+} 
+
+% Lightweight Modular Staging: A Pragmatic Approach to Runtime Code Generation and Compiled DSLs by Tiark Rompf and Martin Odersky (2010)
+@inproceedings{RO10LMS,
+ author = {Rompf, Tiark and Odersky, Martin},
+ title = {Lightweight Modular Staging: A Pragmatic Approach to Runtime Code Generation and Compiled DSLs},
+ booktitle = {Proceedings of the Ninth International Conference on Generative Programming and Component Engineering},
+ series = {GPCE '10},
+ year = {2010},
+ isbn = {978-1-4503-0154-1},
+ location = {Eindhoven, The Netherlands},
+ pages = {127--136},
+ numpages = {10},
+ url = {http://doi.acm.org/10.1145/1868294.1868314},
+ doi = {10.1145/1868294.1868314},
+ acmid = {1868314},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+% Guaranteed Optimization for Domain-Specific Programming by Todd L. Veldhuizen (2004)
+@inbook{V04GOfDSP,
+ author= {Veldhuizen, Todd L.},
+ editor= {Lengauer, Christian and Batory, Don and Consel, Charles and Odersky, Martin},
+ title= {Guaranteed Optimization for Domain-Specific Programming},
+ bookTitle= {Domain-Specific Program Generation: International Seminar, Dagstuhl Castle, Germany, March 23-28, 2003. Revised Papers},
+ year= {2004},
+ publisher= {Springer Berlin Heidelberg},
+ address= {Berlin, Heidelberg},
+ pages= {307--324},
+ abstract= {For software engineering reasons, it is often best to provide domain-specific programming environments in the context of a general-purpose language. In our view general-purpose languages are not yet general-purpose enough, and progress needs to be made before we can provide domain-specific languages that are both fast and safe. We outline some goals in this regard, and describe a possible implementation technology: guaranteed optimization, a technique for building compilers that provide proven guarantees of what optimizations they perform. Such optimizers can provide capabilities similar to staged languages, and thus provide the relevant performance improvements. They can also function as decision procedures, suggesting an approach of `optimizers as theorem provers,' in which optimizing compilers can be used to check domain-specific safety properties and check proofs embedded in programs.},
+ isbn= {978-3-540-25935-0},
+ doi= {10.1007/978-3-540-25935-0_18},
+ url= {https://doi.org/10.1007/978-3-540-25935-0_18}
+}
+
+% Multi-Stage Programming: Its Theory and Applications by Walid Taha (1999)
+@phdthesis{T99MSP,
+ author = {Taha, Walid Mohamed},
+ title = {Multi-Stage Programming: Its Theory and Applications},
+ year = {1999},
+ isbn = {0-599-52497-9},
+ note = {AAI9949870},
+ publisher = {Oregon Graduate Institute of Science and Technology},
+ pages = {171},
+}
+
+% Staging beyond Terms: Prospects and Challenges by Jun Inoue and Oleg Kiselyov and Yukiyoshi Kameyama (2016)
+@inproceedings{IKK16SBT,
+ author = {Inoue, Jun and Kiselyov, Oleg and Kameyama, Yukiyoshi},
+ title = {Staging Beyond Terms: Prospects and Challenges},
+ booktitle = {Proceedings of the 2016 ACM SIGPLAN Workshop on Partial Evaluation and Program Manipulation},
+ series = {PEPM '16},
+ year = {2016},
+ isbn = {978-1-4503-4097-7},
+ location = {St. Petersburg, FL, USA},
+ pages = {103--108},
+ numpages = {6},
+ url = {http://doi.acm.org/10.1145/2847538.2847548},
+ doi = {10.1145/2847538.2847548},
+ acmid = {2847548},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+% Meta-programming and Multi-stage Programming for GPGPUs by Marc Baboulin and Joel Falcou and Ian Masliah (2015)
+@techreport{BFM15MSPGPU,
+  title = {{Meta-programming and Multi-stage Programming for GPGPUs}},
+  author = {Baboulin, Marc and Falcou, Joel and Masliah, Ian},
+  url = {https://hal.inria.fr/hal-01204661},
+  type = {Research Report},
+  number = {RR-8780},
+  institution = {{Inria Saclay Ile de France ; Paris-Sud XI}},
+  year = {2015},
+  month = Sep,
+  pdf = {https://hal.inria.fr/hal-01204661/file/RR-8780.pdf},
+  hal_id = {hal-01204661},
+  hal_version = {v1},
+}
+
+% Generative Programming: Methods, Tools, and Applications by Krzysztof Czarnecki and Ulrich W. Eisenecker (2000)
+@book{CE00GP,
+ author = {Czarnecki, Krzysztof and Eisenecker, Ulrich W.},
+ title = {Generative Programming: Methods, Tools, and Applications},
+ year = {2000},
+ isbn = {0-201-30977-7},
+ publisher = {ACM Press/Addison-Wesley Publishing Co.},
+ address = {New York, NY, USA},
+} 
+
+% A Modern Framework for Portable High-Performance Numerical Linear Algebra by Jeremy G. Siek and Andrew Lumsdaine (2000)
+@inbook{SL00MFfPHPNLA,
+ author = {Siek, Jeremy and Lumsdaine, Andrew},
+ editor = {Langtangen, Hans Petter and Bruaset, Are Magnus and Quak, Ewald},
+ title = {A Modern Framework for Portable High-Performance Numerical Linear Algebra},
+ bookTitle = {Advances in Software Tools for Scientific Computing},
+ year = {2000},
+ publisher = {Springer Berlin Heidelberg},
+ address = {Berlin, Heidelberg},
+ pages = {1--55},
+ abstract = {In this chapter, we present a generic programming methodology for expressing data structures and algorithms for numerical linear algebra. We also present a high-performance implementation of this approach, the Matrix Template Library (MTL). As with the Standard Template Library, our approach is five-fold, consisting of generic functions, containers, iterators, adapters, and function objects, all developed specifically for high-performance numerical linear algebra. Within our framework, we provide generic functions corresponding to the mathematical operations that define linear algebra. Similarly, the containers, adapters, and iterators are used to represent and to manipulate concrete linear algebra objects such as matrices and vectors. To many scientific computing users, however, the advantages of an elegant programming interface are secondary to issues of performance. There are two aspects to how we achieved high performance in the MTL. The first is the use of static polymorphism (template functions) with modern optimizing compilers, enabling extreme flexibility with no loss in performance. The second is the application of abstraction to the optimization process itself. The Basic Linear Algebra Instruction Set (BLAIS) is presented as an abstract interface to several important performance optimizations. Our experimental results show that MTL with the BLAIS achieves performance that is as good as, or better than, vendor-tuned libraries, even though MTL and the BLAIS are written completely in C++. We therefore conclude that the use of abstraction is not a barrier to performance, contrary to conventional wisdom, and that certain abstractions can in fact facilitate optimization. In addition, MTL requires orders of magnitude fewer lines of code for its implementation, with the concomitant savings in development and maintenance effort.},
+ isbn = {978-3-642-57172-5},
+ doi = {10.1007/978-3-642-57172-5_1},
+ url = {https://doi.org/10.1007/978-3-642-57172-5_1},
+}
+
+% A Comparison of C ++ Concepts and Haskell Type Classes by Jean-Philippe Bernardy and Patrik Jansson and Marcin Zalewski and Sibylle Schupp and Andreas Priesnitz (2008)
+@inproceedings{BJZSP08CppCHTC,
+ author = {Bernardy, Jean-Philippe and Jansson, Patrik and Zalewski, Marcin and Schupp, Sibylle and Priesnitz, Andreas},
+ title = {A Comparison of C++ Concepts and Haskell Type Classes},
+ booktitle = {Proceedings of the ACM SIGPLAN Workshop on Generic Programming},
+ series = {WGP '08},
+ year = {2008},
+ isbn = {978-1-60558-060-9},
+ location = {Victoria, BC, Canada},
+ pages = {37--48},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/1411318.1411324},
+ doi = {10.1145/1411318.1411324},
+ acmid = {1411324},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+% An extended comparative study of language support for generic programming by Ronald Garcia and Jaakko Jarvi and Andrew Lumsdaine and Jeremy Siek and Jeremiah Willcock (2007)
+@article{GJLSW07ECSoLSoGP,
+ author     = {Garcia, Ronald and Jarvi, Jaakko and Lumsdaine, Andrew and Siek, Jeremy and Willcock, Jeremiah},
+ title      = {An Extended Comparative Study of Language Support for Generic Programming},
+ journal    = {Journal of Functional Programming},
+ issue_date = {March 2007},
+ volume     = {17},
+ number     = {2},
+ month      = mar,
+ year       = {2007},
+ issn       = {0956-7968},
+ pages      = {145--205},
+ numpages   = {61},
+ url        = {http://dx.doi.org/10.1017/S0956796806006198},
+ doi        = {10.1017/S0956796806006198},
+ acmid      = {1230757},
+ publisher  = {Cambridge University Press},
+ address    = {New York, NY, USA},
+}
+
+% Concepts – syntax and composition by Bjarne Stroustrup and Gabriel Dos Reis (2003)
+@techreport{SR03C,
+ author      = {Stroustrup, Bjarne and Reis, Gabriel Dos},
+ title       = {Concepts – syntax and composition},
+ institution = {Programming Language C++, Library Working Group},
+ number      = {N1536},
+ year        = {2003},
+ date        = {2013-10-22},
+ url         = {http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2003/n1536.pdf},
+ urldate     = {2017-08-18},
+}
+
+% Concepts for C++ 0x by Jeremy Siek and Douglas Gregor and Ronald Garcia and Jeremiah Willcock and Jaakko Järvi and Andrew Lumsdaine (2005) [N1758]
+@techreport{SGGWJL05C,
+ author      = {Jeremy Siek and Douglas Gregor and Ronald Garcia and Jeremiah Willcock and Jaakko Järvi and Andrew Lumsdaine},
+ title       = {Concepts for C++ 0x},
+ institution = {Programming Language C++, Library Working Group},
+ number      = {N1758},
+ year        = {2005},
+ date        = {2005-01-17},
+ url         = {http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2005/n1758.pdf},
+ urldate     = {2017-08-18},
+}
+
+% The C++0x "Remove Concepts" Decision by Bjarne Stroustrup (2009)
+@online{S09RCD,
+ author  = {Bjarne Stroustrup},
+ year    = {2009},
+ date    = {2009-07-22},
+ title   = {The C++0x "Remove Concepts" Decision},
+ journal = {Dr. Dobb's Journal},
+ url     = {http://www.drdobbs.com/cpp/the-c0x-remove-concepts-decision/218600111?pgno=1},
+ urldate = {2017-08-18},
+}
+% url     = {https://web.archive.org/web/20170126105101/http://www.drdobbs.com/cpp/the-c0x-remove-concepts-decision/218600111?pgno=1},
+
+
+% C++ Status at the end of 2016 by Bartlomiej Filipek (2016)
+@online{F16Cpp16,
+ author  = {Bartlomiej Filipek},
+ year    = {2016},
+ date    = {2016-12-31},
+ title   = {C++ Status at the end of 2016},
+ url     = {http://www.bfilipek.com/2016/12/c-status-at-end-of-2016.html},
+ urldate = {2017-08-18},
+}
+% url     = {https://web.archive.org/web/20170630120619/http://www.bfilipek.com/2016/12/c-status-at-end-of-2016.html},
+
+% Real World Haskell by Bryan O'Sullivan and John Goerzen and Don Stewart (2008)
+@book{OGS08RWH,
+ author = {O'Sullivan, Bryan and Goerzen, John and Stewart, Don},
+ title = {Real World Haskell},
+ year = {2008},
+ isbn = {0596514980, 9780596514983},
+ edition = {1st},
+ publisher = {O'Reilly Media, Inc.},
+ url = {http://book.realworldhaskell.org/},
+}
+% url = {https://web.archive.org/web/20170812205926/http://book.realworldhaskell.org/},
+% url = {http://book.realworldhaskell.org/read/using-typeclasses.html}
+
+% How to make ad-hoc polymorphism less ad hoc by Philip Wadler and Stephen Blott (1988)
+@inproceedings{WB89AHP,
+ author = {Wadler, Philip and Blott, Stephen},
+ title = {How to make ad-hoc polymorphism less ad hoc},
+ booktitle = {Proceedings of the 16th ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
+ series = {POPL '89},
+ year = {1989},
+ isbn = {0-89791-294-2},
+ location = {Austin, Texas, USA},
+ pages = {60--76},
+ numpages = {17},
+ url = {http://doi.acm.org/10.1145/75277.75283},
+ doi = {10.1145/75277.75283},
+ acmid = {75283},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+% A History of Haskell: Being Lazy With Class by Paul Hudak and John Hughes and Simon Peyton Jones and Philip Wadler (2007)
+@inproceedings{HHPW07HoH,
+ author = {Hudak, Paul and Hughes, John and Peyton Jones, Simon and Wadler, Philip},
+ title = {A History of Haskell: Being Lazy With Class},
+ booktitle = {Proceedings of the Third ACM SIGPLAN Conference on History of Programming Languages},
+ series = {HOPL III},
+ year = {2007},
+ isbn = {978-1-59593-766-7},
+ location = {San Diego, California},
+ pages = {12-1--12-55},
+ url = {http://doi.acm.org/10.1145/1238844.1238856},
+ doi = {10.1145/1238844.1238856},
+ acmid = {1238856},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+@online{NNTC,
+ title   = {Type classes},
+ url     = {http://typelevel.org/cats/typeclasses.html},
+ urldate = {2017-08-22}
+}
+%url     = {https://web.archive.org/web/20170606022336/http://typelevel.org/cats/typeclasses.html},
+
+% The Haskell School of Expression: Learning Functional Programming through Multimedia by Paul Hudak (2000)
+@book{H00HSoE,
+ author = {Hudak, Paul},
+ title = {The Haskell School of Expression: Learning Functional Programming through Multimedia},
+ year = {2000},
+ isbn = {0-521-64408-9},
+ publisher = {Cambridge University Press},
+ address = {New York, NY, USA},
+}
+
+% Concept-Based Component Libraries and Optimizing Compilers by Sibylle Schupp and Douglas P. Gregor and Brian Osman and David R. Musser and Jeremy G. Siek and Lie-Quan Lee and Andrew Lumsdaine (2002)
+@inproceedings{SGOMSLL02CBCLaOC,
+ author = {Schupp, Sibylle and Gregor, Douglas P. and Osman, B. and Musser, David R. and Siek, Jeremy G. and Lee, Lie-Quan and Lumsdaine, Andrew},
+ title = {Concept-Based Component Libraries and Optimizing Compilers},
+ booktitle = {Proceedings of the 16th International Parallel and Distributed Processing Symposium},
+ series = {IPDPS '02},
+ year = {2002},
+ isbn = {0-7695-1573-8},
+ pages = {106--},
+ url = {http://dl.acm.org/citation.cfm?id=645610.661720},
+ acmid = {661720},
+ publisher = {IEEE Computer Society},
+ address = {Washington, DC, USA},
+} 
+
+
+% Concepts: The Future of Generic Programming by Bjarne Stroustrup (2017)
+@online{S17CFoGP,
+ author  = {Bjarne Stroustrup},
+ year    = {2017},
+ date    = {2017-01-31},
+ title   = {Concepts: The Future of Generic Programming},
+ url     = {http://stroustrup.com/good_concepts.pdf},
+ urldate = {2017-08-21},
+}
+%url     = {https://web.archive.org/web/20170705103018/http://stroustrup.com/good_concepts.pdf},
+
+% Defining Concepts: Concepts provide a new way of constraining code by Andrew Sutton (2016)
+@online{S16DC,
+ author    = {Andrew Sutton},
+ year      = {2016},
+ title     = {Defining Concepts: Concepts provide a new way of constraining code},
+ url       = {https://accu.org/index.php/journals/2198},
+ urldate   = {2017-08-21},
+ publisher = {ACCU},
+ booktitle = {Overload Journal \#131 - February 2016 + Programming Topics},
+}
+% url       = {https://web.archive.org/web/20170718190323/https://accu.org/index.php/journals/2198},
+
+% A System For Axiomatic Programming by Gabriel Dos Reis (2012) / http://liz.axiomatics.org/trac
+@inproceedings{R12SfAP,
+ author = {Reis, Gabriel Dos},
+ title = {A System for Axiomatic Programming},
+ booktitle = {Proceedings of the 11th International Conference on Intelligent Computer Mathematics},
+ series = {CICM'12},
+ year = {2012},
+ isbn = {978-3-642-31373-8},
+ location = {Bremen, Germany},
+ pages = {295--309},
+ numpages = {15},
+ url = {http://dx.doi.org/10.1007/978-3-642-31374-5_20},
+ doi = {10.1007/978-3-642-31374-5_20},
+ acmid = {2352831},
+ publisher = {Springer-Verlag},
+ address = {Berlin, Heidelberg},
+}
+
+% Design of Concept Libraries for C++ by Andrew Sutton and Bjarne Stroustrup (2011)
+@inproceedings{SS11DoCL,
+ author = {Sutton, Andrew and Stroustrup, Bjarne},
+ title = {Design of Concept Libraries for C++},
+ booktitle = {Proceedings of the 4th International Conference on Software Language Engineering},
+ series = {SLE'11},
+ year = {2012},
+ isbn = {978-3-642-28829-6},
+ location = {Braga, Portugal},
+ pages = {97--118},
+ numpages = {22},
+ url = {http://dx.doi.org/10.1007/978-3-642-28830-2_6},
+ doi = {10.1007/978-3-642-28830-2_6},
+ acmid = {2341427},
+ publisher = {Springer-Verlag},
+ address = {Berlin, Heidelberg},
+}
+
+% Axioms: Semantics Aspects of C++ Concepts by Gabriel Dos Reis and Bjarne Stroustrup and Alisdair Meredith (2009) [n2887]
+@techreport{RSM09A,
+ author      = {Gabriel Dos Reis and Bjarne Stroustrup and Alisdair Meredith},
+ title       = {Axioms: Semantics Aspects of C++ Concepts},
+ institution = {Programming Language C++, Library Working Group},
+ number      = {N2887},
+ year        = {2009},
+ date        = {2009-06-21},
+ url         = {http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2009/n2887.pdf},
+ urldate     = {2017-08-21},
+}
+
+% Concept Checking: Binding Parametric Polymorphism in C++ by Jeremy Siek and Andrew Lumsdaine (2000)
+@inproceedings{SL00CC,
+ author = {Jeremy Siek and Andrew Lumsdaine},
+ title = {Concept Checking: Binding Parametric Polymorphism in C++},
+ booktitle = {First Workshop on C++ Template Programming},
+ year = {2000},
+ month = oct,
+ location = {Erfurt, Germany},
+ url = {http://oonumerics.org/tmpw00/},
+ abstract = {Generic programming in C++ is characterized by the use of template parameters to represent abstract data types (or ``concepts''). However, the C++ language itself does not provide a mechanism for explicitly handling concepts. As a result, it can be difficult to insure that a concrete type meets the requirements of the concept it is supposed to represent. Error messages resulting from incorrect use of a concrete type can be particularly difficult to decipher. In this paper we present techniques to check parameters in generic C++ libraries. Our techniques use standard C++ and introduce no run-time overhead.},
+}
+
+% Signatures: A Language Extension for Improving Type Abstraction and Subtype Polymorphism in C++ by Gerald Baumgartner and Vincent F. Russo (1995)
+@article {BR95S,
+ author = {Baumgartner, Gerald and Russo, Vincent F.},
+ title = {Signatures: A Language Extension for Improving Type Abstraction and Subtype Polymorphism in C++},
+ journal = {Software: Practice and Experience},
+ volume = {25},
+ number = {8},
+ publisher = {John Wiley \& Sons, Ltd.},
+ issn = {1097-024X},
+ url = {http://dx.doi.org/10.1002/spe.4380250803},
+ doi = {10.1002/spe.4380250803},
+ pages = {863--889},
+ year = {1995},
+}
+
+% Subtypes vs. Where Clauses: Constraining Parametric Polymorphism by Mark Day and Robert Gruber and Barbara Liskov and Andrew C. Myers (1995)
+@inproceedings{DGLM95SWC,
+ author = {Day, Mark and Gruber, Robert and Liskov, Barbara and Myers, Andrew C.},
+ title = {Subtypes vs. Where Clauses: Constraining Parametric Polymorphism},
+ booktitle = {Proceedings of the Tenth Annual Conference on Object-oriented Programming Systems, Languages, and Applications},
+ series = {OOPSLA '95},
+ year = {1995},
+ isbn = {0-89791-703-0},
+ location = {Austin, Texas, USA},
+ pages = {156--168},
+ numpages = {13},
+ url = {http://doi.acm.org/10.1145/217838.217852},
+ doi = {10.1145/217838.217852},
+ acmid = {217852},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+% Adding Wildcards to the Java Programming Language by Mads Torgersen and Erik Ernst and Christian Plesner Hansen and Peter von der Ahé and Gilad Bracha and Neal Gafter (2004)
+@inproceedings{THEABG04WJ,
+ author = {Torgersen, Mads and Hansen, Christian Plesner and Ernst, Erik and von der Ahé, Peter and Bracha, Gilad and Gafter, Neal},
+ title = {Adding Wildcards to the Java Programming Language},
+ booktitle = {Proceedings of the 2004 ACM Symposium on Applied Computing},
+ series = {SAC '04},
+ year = {2004},
+ isbn = {1-58113-812-1},
+ location = {Nicosia, Cyprus},
+ pages = {1289--1296},
+ numpages = {8},
+ url = {http://doi.acm.org/10.1145/967900.968162},
+ doi = {10.1145/967900.968162},
+ acmid = {968162},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+% Concepts: Linguistic Support for Generic Programming in C++ by Douglas Gregor and Jaakko Järvi and Jeremy Siek and Bjarne Stroustrup and Gabriel Dos Reis and Andrew Lumsdaine (2006)
+@inproceedings{GJSDL06C,
+ author = {Gregor, Douglas and J\"{a}rvi, Jaakko and Siek, Jeremy and Stroustrup, Bjarne and Dos Reis, Gabriel and Lumsdaine, Andrew},
+ title = {Concepts: Linguistic Support for Generic Programming in C++},
+ booktitle = {Proceedings of the 21st Annual ACM SIGPLAN Conference on Object-oriented Programming Systems, Languages, and Applications},
+ series = {OOPSLA '06},
+ year = {2006},
+ isbn = {1-59593-348-4},
+ location = {Portland, Oregon, USA},
+ pages = {291--310},
+ numpages = {20},
+ url = {http://doi.acm.org/10.1145/1167473.1167499},
+ doi = {10.1145/1167473.1167499},
+ acmid = {1167499},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+% Specifying C++ Concepts by Gabriel Dos Reis and Bjarne Stroustrup (2006)
+@inproceedings{RS06SCC,
+ author = {Dos Reis, Gabriel and Stroustrup, Bjarne},
+ title = {Specifying C++ Concepts},
+ booktitle = {Conference Record of the 33rd ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
+ series = {POPL '06},
+ year = {2006},
+ isbn = {1-59593-027-2},
+ location = {Charleston, South Carolina, USA},
+ pages = {295--308},
+ numpages = {14},
+ url = {http://doi.acm.org/10.1145/1111037.1111064},
+ doi = {10.1145/1111037.1111064},
+ acmid = {1111064},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+% A Concept Design for the STL by Bjarne Stroustrup and Andrew Sutton (2012) [n3351]
+@techreport{SS12CD,
+ author      = {Bjarne Stroustrup and Andrew Sutton},
+ title       = {A Concept Design for the STL},
+ institution = {Programming Language C++, Library Working Group},
+ number      = {N3351},
+ year        = {2012},
+ date        = {2012-01-13},
+ url         = {http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3351.pdf},
+ urldate     = {2017-08-21},
+}
+
+% CONCEPT LATTICES AND CONCEPTUAL KNOWLEDGE SYSTEMS by RUDOLF WILLE (1992)
+@article{W92CL,
+ title = {Concept lattices and conceptual knowledge systems},
+ journal = {Computers \& Mathematics with Applications},
+ volume = {23},
+ number = {6},
+ pages = {493--515},
+ year = {1992},
+ issn = {0898-1221},
+ doi = {http://dx.doi.org/10.1016/0898-1221(92)90120-7},
+ url = {http://www.sciencedirect.com/science/article/pii/0898122192901207},
+ author = {Rudolf Wille},
+}
+
+% RESTRUCTURING LATTICE THEORY: AN APPROACH BASED ON HIERARCHIES OF CONCEPTS by Rudolf Wille (1982)
+@inproceedings{W09RLT,
+ author = {Wille, Rudolf},
+ title = {RESTRUCTURING LATTICE THEORY: AN APPROACH BASED ON HIERARCHIES OF CONCEPTS},
+ booktitle = {Proceedings of the 7th International Conference on Formal Concept Analysis},
+ series = {ICFCA '09},
+ year = {2009},
+ isbn = {978-3-642-01814-5},
+ location = {Darmstadt, Germany},
+ pages = {314--339},
+ numpages = {26},
+ url = {http://dx.doi.org/10.1007/978-3-642-01815-2_23},
+ doi = {10.1007/978-3-642-01815-2_23},
+ acmid = {1560353},
+ publisher = {Springer-Verlag},
+ address = {Berlin, Heidelberg},
+}
+
+% Generic programming with C++ concepts and Haskell type classes - a comparison by Jean-Philippe Bernardy and Patrik Jansson and Marcin Zalewski and Sibylle Schupp (2010)
+@article{BJZS10CCHTC,
+ title={Generic programming with C++ concepts and Haskell type classes - a comparison},
+ volume={20},
+ DOI={10.1017/S095679681000016X},
+ number={3-4},
+ journal={Journal of Functional Programming},
+ publisher={Cambridge University Press},
+ author={Jean-Philippe Bernardy and Patrik Jansson and Marcin Zalewski and Sibylle Schupp},
+ year={2010},
+ pages={271–302}
+}
+
+% Essential Language Support for Generic Programming by Jeremy G. Siek and Andrew Lumsdaine (2005)
+@inproceedings{SL05ELSfGP,
+ author = {Siek, Jeremy G. and Lumsdaine, Andrew},
+ title = {Essential Language Support for Generic Programming},
+ booktitle = {Proceedings of the 2005 ACM SIGPLAN Conference on Programming Language Design and Implementation},
+ series = {PLDI '05},
+ year = {2005},
+ isbn = {1-59593-056-6},
+ location = {Chicago, IL, USA},
+ pages = {73--84},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/1065010.1065021},
+ doi = {10.1145/1065010.1065021},
+ acmid = {1065021},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+% Fundamental Algebraic Concepts in Concept-Enabled C++ by Peter Gottschling (2006) [TR638]
+@techreport{G06FAC,
+ author = {Peter Gottschling},
+ title = {Fundamental Algebraic Concepts in Concept-Enabled C++},
+ institution = {Indiana University},
+ year = {2006},
+ number = {638}
+}
+
+% Integrating Semantics and Compilation: Using C++ concepts to develop robust and efficient reusable libraries by Peter Gottschling and Andrew Lumsdaine (2008)
+@inproceedings{GL08ISaC,
+ author = {Gottschling, Peter and Lumsdaine, Andrew},
+ title = {Integrating Semantics and Compilation: Using C++ Concepts to Develop Robust and Efficient Reusable Libraries},
+ booktitle = {Proceedings of the 7th International Conference on Generative Programming and Component Engineering},
+ series = {GPCE '08},
+ year = {2008},
+ isbn = {978-1-60558-267-2},
+ location = {Nashville, TN, USA},
+ pages = {67--76},
+ numpages = {10},
+ url = {http://doi.acm.org/10.1145/1449913.1449925},
+ doi = {10.1145/1449913.1449925},
+ acmid = {1449925},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+% The Tecton Concept Library by David R. Musser and Sibylle Schupp and Christoph Schwarzweller and Rüudiger Loos (1999)
+@techreport{MSSL99TCL,
+ author = {David R. Musser and Sibylle Schupp and Christoph Schwarzweller and Rüudiger Loos},
+ title = {The Tecton Concept Library},
+ institution = {Universität Tübingen / Wilhelm-Schickard-Institut für Informatik},
+ year = {1999},
+ url = {http://hdl.handle.net/10900/48592},
+}
+
+% Algebraic Concepts Represented in C++ by Sibylle Schupp and Douglas Gregor and David Musser (2000)
+@techreport{SGM00ACR,
+  title = {Algebraic Concepts Represented in C++},
+  author = {Schupp, Sibylle and Gregor, Douglas P. and Musser, David},
+  year = {2000},
+  number = {Technical Report TR-00-8},
+  institution = {Rensselaer Polytechnic Institute},
+}
+
+% Tecton: a framework for specifying and verifying generic system components by Deepak Kapur and David R. Musser (1992)
+@inproceedings{KM92T,
+ author = {Deepak Kapur and David R. Musser},
+ title = {Tecton: a framework for specifying and verifying generic system components},
+ year = {1992},
+ institution = {University of Nijmegen},
+ location = {Nijmegen, Netherlands},
+ month = jul,
+ note = {Rensselaer Polytechnic Institute Computer Science Technical Report 92-20 [Invited talk at TPCD Conf. 1992 (Theorem Provers in Circuit Design), University of Nijmegen, The Netherlands, June 22-24, 1992]},
+}
+
+% The Tecton Concept Description Language by David R. Musser (1998)
+@online{M98TCDL,
+ author    = {David R. Musser},
+ year      = {1998},
+ month     = jul,
+ title     = {The Tecton Concept Description Language},
+ url       = {http://www.cs.rpi.edu/~musser/gp/tecton/tecton1.ps.gz},
+ urldate   = {2017-08-21},
+}
+% url       = {https://web.archive.org/web/20000919055047/http://www.cs.rpi.edu:80/~musser/gp/tecton/tecton1.ps.gz},
+
+% Operators and algebraic structures by Deepak Kapur and David Rea Musser and Alexander A. Stepanov (1981)
+@inproceedings{KMS81OaAS,
+ author = {Kapur, Deepak and Musser, David Rea and Stepanov, Alexander A.},
+ title = {Operators and Algebraic Structures},
+ booktitle = {Proceedings of the 1981 Conference on Functional Programming Languages and Computer Architecture},
+ series = {FPCA '81},
+ year = {1981},
+ isbn = {0-89791-060-5},
+ location = {Portsmouth, New Hampshire, USA},
+ pages = {59--64},
+ numpages = {6},
+ url = {http://doi.acm.org/10.1145/800223.806763},
+ doi = {10.1145/800223.806763},
+ acmid = {806763},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+% From Mathematics to Generic Programming by Alexander Alexandrowitsch Stepanow and Daniel E. Rose (2014)
+@book{SR14MtGP,
+ author = {Stepanov, Alexander A. and Rose, Daniel E.},
+ title = {From Mathematics to Generic Programming},
+ year = {2014},
+ isbn = {0321942043, 9780321942043},
+ edition = {1st},
+ publisher = {Addison-Wesley Professional},
+} 
+% A generic topology library by René Heinzl and Philipp Schwaha (2009)
+
+@article{HS11gtl,
+ author = {Heinzl, René and Schwaha, Philipp},
+ title = {A generic topology library},
+ journal = {Science of Computer Programming},
+ issue_date = {April, 2011},
+ volume = {76},
+ number = {4},
+ month = apr,
+ year = {2011},
+ issn = {0167-6423},
+ pages = {324--346},
+ numpages = {23},
+ url = {http://dx.doi.org/10.1016/j.scico.2009.09.007},
+ doi = {10.1016/j.scico.2009.09.007},
+ acmid = {1937552},
+ publisher = {Elsevier North-Holland, Inc.},
+ address = {Amsterdam, The Netherlands, The Netherlands},
+} 
+
+% Type Classes with Functional Dependencies by Mark P. Jones (2000)
+@inproceedings{J00TCwFD,
+ author = {Jones, Mark P.},
+ title = {Type Classes with Functional Dependencies},
+ booktitle = {Proceedings of the 9th European Symposium on Programming Languages and Systems},
+ series = {ESOP '00},
+ year = {2000},
+ isbn = {3-540-67262-1},
+ pages = {230--244},
+ numpages = {15},
+ url = {http://dl.acm.org/citation.cfm?id=645394.651909},
+ acmid = {651909},
+ publisher = {Springer-Verlag},
+ address = {London, UK, UK},
+} 
+
+% Multi-Language Library Development From Haskell Type Classes to C++ Concepts by Marcin Zalewski and Andreas Priesnitz and Cezar Ionescu and Nicola Botta (2007)
+@inproceedings{ZPIBS07MLLD, 
+ author={Zalewski, Marcin and Priesnitz, Andreas and Ionescu, Cezar and Botta, Nicola and Schupp, Sibylle},
+ title={Multi-Language Library Development From Haskell Type Classes to C++ Concepts},
+ booktitle={Multiparadigm Programming with Object-Oriented Languages},
+ series = {MPOOL 2007},
+ abstract={We define a mapping from generic Haskell specifications to C++ with concepts, a recent extension to C++, that can ultimately be automated. More specifically, we provide a translation from Haskell multi-parameter type classes with functional dependencies to ConceptC++. Our translation consists of three major parts: the division of Haskell class variables into ConceptC++ concept parameters and associated types, the corresponding division of superclasses in the context of a type class, and the linearization of Haskell ASTs to the concrete syntax of ConceptC++. We also discuss cases in which there is no single correct translation from classes with functional dependencies to concepts. Our translation handles these cases in a reasonable way and is well-defined for the cases most common in practice. The translation is motivated by an ongoing project for distributed adaptive finite volume methods, in which software components are modeled in Haskell and implemented in C++. },
+ year={2007},
+}
+
+% An Analysis of Constrained Polymorphism for Generic Programming by Jaakko Järvi and Andrew Lumsdaine and Jeremy Siek and Jeremiah Willcock (2003)
+@inproceedings{JLSW03AoCPfGP,
+ author = {Jaakko Järvi and Andrew Lumsdaine and Jeremy Siek and Jeremiah Willcock},
+ title = {An Analysis of Constrained Polymorphism for Generic Programming},
+ booktitle = {Multiparadigm Programming 2003: Proceedings of the MPOOL Workshop at OOPSLA'03},
+ series = {John von Neumann Institute of Computing series},
+ pages = {87--107},
+ editor = {Kei Davis and Jörg Striegnitz},
+ year = {2003},
+ month = oct,
+} 
+
+% Simplifying the use of concepts by Bjarne Stroustrup (2009) [n2906]
+@techreport{S09SC,
+ author      = {Bjarne Stroustrup},
+ title       = {Simplifying the use of concepts},
+ institution = {Programming Language C++, Library Working Group},
+ number      = {N2906},
+ year        = {2009},
+ date        = {2009-06-21},
+ url         = {http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2009/n2906.pdf},
+ urldate     = {2017-08-22},
+}
+
+% Algebra: Volume I by Bartel Leendert van der Waerden (1991)
+@book{W91AVI,
+ title = {Algebra},
+ subtitle = {Volume I},
+ author = {van der Waerden, Bartel Leendert},
+ translator = {Blum, F. and Schulenberg, J.R.},
+ year = {1991},
+ publisher = {Springer-Verlag New York},
+ isbn = {978-0-387-40624-4},
+ edition = {1},
+}
+
+% Al Stevens Interviews Alex Stepanov, https://www.sgi.com/tech/stl/drdobbs-interview.html
+@online{A09oI,
+ author  = {Al Stevens},
+ year    = {1995},
+ month   = mar,
+ title   = {Al Stevens Interviews Alex Stepanov},
+ journal = {Dr. Dobb's Journal},
+ url     = {http://www.sgi.com/tech/stl/drdobbs-interview.html},
+ urldate = {2017-08-22}
+}
+%url     = {https://web.archive.org/web/20161228021913/http://www.sgi.com:80/tech/stl/drdobbs-interview.html},
+
+% Early detection of type errors in C++ templates by Sheng Chen and Martin Erwig (2014)
+@inproceedings{CE14EDoTE,
+ author = {Chen, Sheng and Erwig, Martin},
+ title = {Early Detection of Type Errors in C++ Templates},
+ booktitle = {Proceedings of the ACM SIGPLAN 2014 Workshop on Partial Evaluation and Program Manipulation},
+ series = {PEPM '14},
+ year = {2014},
+ isbn = {978-1-4503-2619-3},
+ location = {San Diego, California, USA},
+ pages = {133--144},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/2543728.2543731},
+ doi = {10.1145/2543728.2543731},
+ acmid = {2543731},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+% Type Classes and Subtyping: Two different Approaches of Polymorphism by Lars Hupel (2011)
+@article{H11TCaS,
+ author = {Lars Hupel},
+ title = {Type Classes and Subtyping},
+ subtitle = {Two different Approaches of Polymorphism},
+ year = {2011},
+ url = {http://www2.in.tum.de/hp/file?fid=875},
+}
+%url = {https://web.archive.org/web/20170822115402/http://www2.in.tum.de/hp/file?fid=875},
+
+% Type classes: an exploration of the design space by Simon Peyton Jones and Mark Jones and Erik Meijer (1997)
+@inproceedings{PJM97TC,
+ author = {Peyton Jones, Simon and Jones, Mark and Meijer, Erik},
+ title = {Type classes: an exploration of the design space},
+ booktitle = {Proc. of the Haskell Workshop},
+ editor = {Launchbury, J.},
+ location = {Amsterdam, The Netherlands},
+ month = jun,
+ year = {1997},
+ url = {https://www.microsoft.com/en-us/research/wp-content/uploads/1997/01/multi.pdf},
+} 
+
+% Programming with C++ concepts by Jaakko Järvi and Mat Marcus and Jacob N. Smith (2010)
+@article{JMS10PCC,
+ author = {Järvi, Jaakko and Marcus, Mat and Smith, Jacob N.},
+ title = {Programming with C++ Concepts},
+ journal = {Science of Computer Programming},
+ issue_date = {July, 2010},
+ volume = {75},
+ number = {7},
+ month = jul,
+ year = {2010},
+ issn = {0167-6423},
+ pages = {596--614},
+ numpages = {19},
+ url = {http://dx.doi.org/10.1016/j.scico.2009.01.001},
+ doi = {10.1016/j.scico.2009.01.001},
+ acmid = {1773168},
+ publisher = {Elsevier North-Holland, Inc.},
+ address = {Amsterdam, The Netherlands},
+}
+
+% Runtime Polymorphic Generic Programming—Mixing Objects and Concepts in ConceptC++ by Mat Marcus and Jaakko Järvi and Sean Parent (2007)
+@inproceedings{MJP07RPGP,
+ title = {Runtime Polymorphic Generic Programming—Mixing Objects and Concepts in ConceptC++},
+ author = {Mat Marcus and Jaakko Järvi and Sean Parent},
+ booktitle = {Multiparadigm Programming 2007: Proceedings of the MPOOL Workshop at ECOOP ’07},
+ year = {2007},
+ editor = {K. Davis and J. Striegnitz},
+}
+
+% Dynamic algorithm selection for runtime concepts by Peter Pirkelbauer and Sean Parent and Mat Marcus and Bjarne Stroustrup (2010)
+@article{PPMS10DAS,
+ author = {Pirkelbauer, Peter and Parent, Sean and Marcus, Mat and Stroustrup, Bjarne},
+ title = {Dynamic algorithm selection for runtime concepts},
+ journal = {Science of Computer Programming},
+ issue_date = {September, 2010},
+ volume = {75},
+ number = {9},
+ month = sep,
+ year = {2010},
+ issn = {0167-6423},
+ pages = {773--786},
+ numpages = {14},
+ url = {http://dx.doi.org/10.1016/j.scico.2009.04.002},
+ doi = {10.1016/j.scico.2009.04.002},
+ acmid = {1823252},
+ publisher = {Elsevier North-Holland, Inc.},
+ address = {Amsterdam, The Netherlands, The Netherlands},
+} 
+
+% Proto: A Compiler Construction Toolkit for DSELs by Eric Niebler (2007)
+@inproceedings{N07P,
+ author = {Niebler, Eric},
+ title = {Proto: A Compiler Construction Toolkit for DSELs},
+ booktitle = {Proceedings of the 2007 Symposium on Library-Centric Software Design},
+ series = {LCSD '07},
+ year = {2007},
+ isbn = {978-1-60558-086-9},
+ location = {Montreal, Canada},
+ pages = {42--51},
+ numpages = {10},
+ url = {http://doi.acm.org/10.1145/1512762.1512767},
+ doi = {10.1145/1512762.1512767},
+ acmid = {1512767},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+% Impact of Economics on Compiler Optimization by Arch D. Robison (2001)
+@inproceedings{R01IoEoCO,
+ author = {Robison, Arch D.},
+ title = {Impact of Economics on Compiler Optimization},
+ booktitle = {Proceedings of the 2001 Joint ACM-ISCOPE Conference on Java Grande},
+ series = {JGI '01},
+ year = {2001},
+ isbn = {1-58113-359-6},
+ location = {Palo Alto, California, USA},
+ pages = {1--10},
+ numpages = {10},
+ url = {http://doi.acm.org/10.1145/376656.376751},
+ doi = {10.1145/376656.376751},
+ acmid = {376751},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+% Technical Report on C++ Performance [TR18015]
+@techreport{MANY06CPERF,
+ author      = {Dave Abrahams and Mike Ball and Walter Banks and Greg Colvin and {Embedded C++ Technical Committee (Japan)} and Hiroshi Fukutomi and Lois Goldthwaite and Yenjo Han and John Hauser and Seiji Hayashida and Howard Hinnant and Brendan Kehoe and Robert Klarer and Jan Kristofferson and Dietmar Kühl and Jens Maurer and Fusako Mitsuhashi and Hiroshi Monden and Nathan Myers and Masaya Obata and Martin O'Riordan and Tom Plum and Dan Saks and Martin Sebor and Bill Seymour and Bjarne Stroustrup and Detlef Vollmann and Willem Wakker},
+ title       = {Technical Report on C++ Performance},
+ institution = {Programming Language C++, Library Working Group},
+ number      = {TR18015},
+ year        = {2006},
+ date        = {2006-02-15},
+ url         = {http://www.open-std.org/jtc1/sc22/wg21/docs/TR18015.pdf},
+ urldate     = {2017-08-22},
+}
+
+% Reflective Metaprogramming by Weiyu Miao (2013)
+@phdthesis{M13RM,
+ author = {Weiyu Miao},
+ title = {Reflective Metaprogramming},
+ year = {2013},
+ institution = {University of Colorado, Boulder},
+ note = {Electrical, Computer \& Energy Engineering Graduate Theses \& Dissertations},
+ number = {76},
+ url = {http://scholar.colorado.edu/ecen_gradetds/76},
+}
+
+% Static Computation and Reflection by Ronald Garcia (2008)
+@phdthesis{G08SCaR,
+ author = {Garcia, Ronald},
+ advisor = {Lumsdaine, Andrew},
+ title = {Static Computation and Reflection},
+ year = {2008},
+ isbn = {978-0-549-91999-5},
+ note = {AAI3337266},
+ publisher = {Indiana University},
+ address = {Indianapolis, IN, USA},
+}
+
+% Debugging C++ Template Metaprograms by Zoltán Porkoláb and József Mihalicza and Ádám Sipos (2006), https://github.com/mikael-s-persson/templight
+@inproceedings{PMS06DCTM,
+ author = {Porkol\'{a}b, Zolt\'{a}n and Mihalicza, J\'{o}zsef and Sipos, \'{A}d\'{a}m},
+ title = {Debugging C++ Template Metaprograms},
+ booktitle = {Proceedings of the 5th International Conference on Generative Programming and Component Engineering},
+ series = {GPCE '06},
+ year = {2006},
+ isbn = {1-59593-237-2},
+ location = {Portland, Oregon, USA},
+ pages = {255--264},
+ numpages = {10},
+ url = {http://doi.acm.org/10.1145/1173706.1173746},
+ doi = {10.1145/1173706.1173746},
+ acmid = {1173746},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+% Jonathon Shlens (2014): "A Tutorial on Principal Component Analysis", http://arxiv.org/pdf/1404.1100.pdf
+@article{S14ToPCA,
+  author      = {Jonathon Shlens},
+  title       = {A Tutorial on Principal Component Analysis},
+  journal     = {CoRR},
+  volume      = {abs/1404.1100},
+  year        = {2014},
+  url         = {http://arxiv.org/abs/1404.1100},
+  institution = {Systems Neurobiology Laboratory, Salk Insitute for Biological Studies, La Jolla, CA 92037 and Institute for Nonlinear Science, University of California, San Diego, La Jolla, CA 92093-0402},
+}
+
+% Gene Howard Golub and Charles Francis Van Loan (1996): Matrix Computations [3rd ed.]
+@book{GVL96MC,
+ author = {Golub, Gene Howard and Van Loan, Charles Francis},
+ title = {Matrix Computations},
+ year = {1996},
+ isbn = {0-8018-5414-8},
+ publisher = {Johns Hopkins University Press},
+ address = {Baltimore, MD, USA},
+ edition = {3rd},
+} 
+
+% Gene Howard Golub and Charles Francis Van Loan (2013): Matrix Computations [4th ed.]
+@book{GVL13MC,
+  title = {Matrix Computations},
+  author = {Golub, Gene Howard and Van Loan, Charles Francis},
+  isbn = {9781421407944},
+  lccn = {2012943449},
+  series = {Johns Hopkins Studies in the Mathematical Sciences},
+  year = {2013},
+  publisher = {Johns Hopkins University Press},
+  edition = {4th},
+}
+
+% When and how to develop domain-specific languages by Marjan Mernik and Jan Heering and Anthony M. Sloane (2005)
+@article{MHS05DSL,
+ author = {Mernik, Marjan and Heering, Jan and Sloane, Anthony M.},
+ title = {When and How to Develop Domain-specific Languages},
+ journal = {ACM Comput. Surv.},
+ issue_date = {December 2005},
+ volume = {37},
+ number = {4},
+ month = dec,
+ year = {2005},
+ issn = {0360-0300},
+ pages = {316--344},
+ numpages = {29},
+ url = {http://doi.acm.org/10.1145/1118890.1118892},
+ doi = {10.1145/1118890.1118892},
+ acmid = {1118892},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+% Multistage Algorithms in C++ by Andreas Priesnitz (2005)
+@thesis{P05MA,
+ author = {Andreas Priesnitz},
+ advisor = {Lube, Gert},
+ title = {Multistage Algorithms in C++},
+ type = {Dissertation},
+ year = {2005},
+ publisher = {Universität Göttingen},
+}
+
+@online{D14H,
+ author  = {Dionne, Louis},
+ year    = {2014},
+ title   = {Boost.Hana: Your standard library for metaprogramming},
+ url     = {https://github.com/boostorg/hana},
+ urldate = {2017-08-22},
+}
+%url     = {https://web.archive.org/web/20170428234812/https://github.com/boostorg/hana},
+
+
+% Making the future safe for the past: Adding Genericity to the Java(TM) Programming Language by Gilad Bracha and Martin Odersky and David Stoutamire and Philip Wadler (1998)
+@inproceedings{BOSW98JG,
+ author = {Bracha, Gilad and Odersky, Martin and Stoutamire, David and Wadler, Philip},
+ title = {Making the future safe for the past: Adding Genericity to the Java(TM) Programming Language},
+ booktitle = {Proceedings of the 13th ACM SIGPLAN Conference on Object-oriented Programming, Systems, Languages, and Applications},
+ series = {OOPSLA '98},
+ year = {1998},
+ isbn = {1-58113-005-8},
+ location = {Vancouver, British Columbia, Canada},
+ pages = {183--200},
+ numpages = {18},
+ url = {http://doi.acm.org/10.1145/286936.286957},
+ doi = {10.1145/286936.286957},
+ acmid = {286957},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+% GJ: Extending the Java Programming Language with type parameters by Gilad Bracha and Martin Odersky and David Stoutamire and Philip Wadler (1998)
+@techreport{BOSW98GJT,
+ author      = {Gilad Bracha and Martin Odersky and David Stoutamire and Philip Wadler},
+ title       = {GJ: Extending the Java Programming Language with type parameters},
+ year        = {1998},
+}
+
+@techreport{RSM07GCE,
+ author      = {Reis, Gabriel Dos and Stroustrup, Bjarne and Maurer, Jens},
+ title       = {Generalized Constant Expressions — Revision 5},
+ institution = {Programming Language C++, Library Working Group},
+ number      = {N2235},
+ year        = {2007},
+ date        = {2007-04-17},
+ url         = {http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2235.pdf},
+ urldate     = {2017-08-23},
+}
+
+% ISO/IEC. (2014). ISO International Standard ISO/IEC 14882:2014(E) – Programming Language C++. [Working draft]. Geneva, Switzerland: International Organization for Standardization (ISO). Retrieved from https://isocpp.org/std/the-standard
+@book{I14Cpp,
+ author = {ISO\slash{}IEC},
+ title = {{ISO\slash{}IEC 14882:2014}: Programming languages --- {C++}},
+ publisher = {International Organization for Standardization (ISO)},
+ year = {2014},
+ address = {Geneva, Switzerland},
+ url = {https://isocpp.org/std/the-standard},
+}
+
+% C++ Concept Checking: A better practice for template programming by Jeremy Siek and Andrew Lumsdaine (2001)
+@online{SL01CCC,
+ author  = {Jeremy Siek and Andrew Lumsdaine},
+ year    = {2001},
+ date    = {2001-06-01},
+ title   = {C++ Concept Checking: A better practice for template programming},
+ journal = {Dr. Dobb's Journal},
+ url     = {http://www.drdobbs.com/cpp/a-better-practice-for-template-programmi/184404645},
+ urldate = {2017-08-23},
+}
+%url     = {https://web.archive.org/web/20150903043726/http://www.drdobbs.com/cpp/a-better-practice-for-template-programmi/184404645},
+
+@online{WKWB00uBLAS,
+ author  = {Joerg Walter and Mathias Koch and Gunter Winkler and David Bellot},
+ year    = {2000},
+ title   = {Boost.uBLAS: Basic Linear Algebra Library},
+ url     = {http://www.boost.org/doc/libs/1_62_0/libs/numeric/ublas/doc/overview.html},
+ urldate = {2017-08-23},
+}
+%url     = {https://web.archive.org/web/20161215115729/http://www.boost.org:80/doc/libs/1_62_0/libs/numeric/ublas/doc/overview.html},
+
+% Expression Templates by Todd Veldhuizen (1995); Erneute Publikation in "C++ Gems: Programming Pearls from The C++ Report" von Stanley B. Lippman (1996/2003?) auf S.475ff., siehe https://books.google.de/books?id=dyZ7AdcK2v0C
+@incollection{V96ET,
+ author = {Veldhuizen, Todd},
+ title = {Expression Templates},
+ booktitle = {C++ Gems: Programming Pearls from The C++ Report},
+ editor = {Lippman, Stanley B.},
+ year = {1996},
+ isbn = {1-884842-37-2},
+ pages = {475--487},
+ numpages = {13},
+ url = {http://dl.acm.org/citation.cfm?id=260627.260749},
+ acmid = {260749},
+ publisher = {SIGS Publications, Inc.},
+ address = {New York, NY, USA},
+}
+
+% Fast Expression Templates: Object-Oriented High Performance Computing by Jochen Härdtlein and Alexander Linke and Christoph Pflaum (2005)
+@inproceedings{HLP05FET,
+ author = {Härdtlein, Jochen and Linke, Alexander and Pflaum, Christoph},
+ title = {Fast Expression Templates},
+ booktitle = {Proceedings of the 5th International Conference on Computational Science - Volume Part II},
+ series = {ICCS'05},
+ year = {2005},
+ isbn = {3-540-26043-9, 978-3-540-26043-1},
+ location = {Atlanta, GA},
+ pages = {1055--1063},
+ numpages = {9},
+ url = {http://dx.doi.org/10.1007/11428848_133},
+ doi = {10.1007/11428848_133},
+ acmid = {2153026},
+ publisher = {Springer-Verlag},
+ address = {Berlin, Heidelberg},
+} 
+
+% Advanced expression templates programming by Jochen Härdtlein and Christoph Pflaum and Alexander Linke and Carsten H. Wolters (2006)
+@article{HPLW10AETP,
+ author = {Härdtlein, Jochen and Pflaum, Christoph and Linke, Alexander and Wolters, Carsten H.},
+ title = {Advanced expression templates programming},
+ journal = {Computing and Visualization in Science},
+ issue_date = {February  2010},
+ volume = {13},
+ number = {2},
+ month = feb,
+ year = {2010},
+ issn = {1432-9360},
+ pages = {59--68},
+ numpages = {10},
+ url = {https://doi.org/10.1007/s00791-009-0128-2},
+ doi = {10.1007/s00791-009-0128-2},
+ acmid = {3113537},
+ publisher = {Springer-Verlag},
+ address = {Berlin, Heidelberg},
+}
+
+% Moderne Expression Templates Programmierung: Weiterentwickelte Techniken und deren Einsatz zur Lösung partieller Differentialgleichungen von Jochen Härdtlein (2007)
+@thesis{H07METP,
+ author = {Härdtlein, Jochen},
+ advisor = {Pflaum, Christoph and von Gudenberg, Jürgen Wolff},
+ title = {Moderne Expression Templates Programmierung},
+ subtitle = {Weiterentwickelte Techniken und deren Einsatz zur Lösung partieller Differentialgleichungen},
+ year = {2007},
+ isbn = {9783936150513},
+ publisher = {SCS Publishing House},
+ address = {Erlangen, Deutschland},
+ type = {Dissertation},
+ institution = {Technischen Fakultät der Universität Erlangen-Nürnberg},
+}
+
+% Expression Templates Revisited: A Performance Analysis of the Current ET Methodology by Klaus Iglberger and Georg Hager and Jan Treibig and Ulrich Rüde (2011)
+@article{IHTR11ETR,
+  author    = {Iglberger, Klaus and Hager, Georg and Treibig, Jan and Rüde, Ulrich},
+  title     = {Expression Templates Revisited: A Performance Analysis of the Current ET Methodology},
+  journal   = {CoRR},
+  volume    = {abs/1104.1729},
+  year      = {2011},
+  url       = {http://arxiv.org/abs/1104.1729},
+  biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/abs-1104-1729},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+% Expression Templates Revisited: A Performance Analysis of Current Methodologies by Klaus Iglberger and Georg Hager and Jan Treibig and Ulrich Rüde (2012)
+@article{IHTR12ETR,
+ author = {Iglberger, Klaus and Hager, Georg and Treibig, Jan and Rüde, Ulrich},
+ title = {Expression Templates Revisited: A Performance Analysis of Current Methodologies},
+ journal = {SIAM Journal on Scientific Computing},
+ issue_date = {April 2012},
+ volume = {34},
+ number = {2},
+ month = mar,
+ year = {2012},
+ issn = {1064-8275},
+ pages = {42--69},
+ numpages = {28},
+ url = {http://dx.doi.org/10.1137/110830125},
+ doi = {10.1137/110830125},
+ acmid = {2340066},
+ publisher = {Society for Industrial and Applied Mathematics},
+ address = {Philadelphia, PA, USA},
+} 
+
+% High Performance Smart Expression Template Math Libraries by Klaus Iglberger and Georg Hager and Jan Treibig and Ulrich Rüde (2012)
+@inproceedings{IHTR12HPSET,
+ author = {Iglberger, Klaus and Hager, Georg and Treibig, Jan and Rüde, Ulrich},
+ booktitle = {Proceedings of the International Conference on High Performance Computing and Simulation},
+ title = {High Performance Smart Expression Template Math Libraries},
+ series = {HPCS'12},
+ year = {2012},
+ pages = {367--373},
+ doi = {10.1109/HPCSim.2012.6266939},
+ url = {http://dx.doi.org/10.1109/HPCSim.2012.6266939},
+ month = jul,
+}
+
+% The Math Library of the pe physics engine - Combining Smart Expression Templates and BLAS Efficiency by Klaus Iglberger and Ulrich Rüde (2009)
+@techreport{IR09ML,
+ author = {Iglberger, Klaus and Rüde, Ulrich},
+ year = {2009},
+ title = {The Math Library of the pe physics engine - Combining Smart Expression Templates and BLAS Efficiency},
+ institution = {Institut für Informatik, Universität Erlangen-Nürnberg},
+ number = {Lehrstuhlbericht 09-17},
+}
+
+% A Compiler Alternative to Expression Templates by Vincent Liu (2010)
+@phdthesis{L10CAtET,
+ author = {Vincent Liu},
+ title = {A Compiler Alternative to Expression Templates},
+ year = {2010},
+ institution = {University of Texas, Austin},
+ note = {Honors Theses},
+ url = {http://hdl.handle.net/2152/13450},
+}
+
+@online{GJO10E,
+ author  = {Guennebaud, Gaël and Jacob, Benoît and others},
+ year    = {2010},
+ title   = {Eigen v3},
+ url     = {http://eigen.tuxfamily.org/},
+ urldate = {2017-08-24},
+}
+%url     = {https://web.archive.org/web/20170822060558/http://eigen.tuxfamily.org/},
+
+@online{IHO12B,
+ author  = {Iglberger, Klaus and Hager, Georg and others},
+ year    = {2012},
+ title   = {Blaze},
+ url     = {https://bitbucket.org/blaze-lib/blaze/wiki/Getting%20Started},
+ urldate = {2017-08-24},
+}
+%url     = {https://web.archive.org/web/20170824115844/https://bitbucket.org/blaze-lib/blaze/wiki/Getting%20Started},
+
+% The Numerical Template Toolbox: A Modern C++ Design for Scientific Computing by Pierre Estérie and Joel Falcou and Mathias Gaunard and Jean-Thierry Lapresté and Lionel Lacassagne (2014)
+@article{EFGLL14NTT,
+ author = {Estérie, Pierre and Falcou, Joel and Gaunard, Mathias and Lapresté, Jean-Thierry and Lacassagne, Lionel},
+ title = {The Numerical Template Toolbox},
+ journal = {Journal of Parallel and Distributed Computing},
+ issue_date = {December 2014},
+ volume = {74},
+ number = {12},
+ month = dec,
+ year = {2014},
+ issn = {0743-7315},
+ pages = {3240--3253},
+ numpages = {14},
+ url = {http://dx.doi.org/10.1016/j.jpdc.2014.07.002},
+ doi = {10.1016/j.jpdc.2014.07.002},
+ acmid = {2841781},
+ publisher = {Academic Press, Inc.},
+ address = {Orlando, FL, USA},
+} 
+
+% Designing HPC libraries in the modern C++ world by Joel FALCOU (2015)
+@inproceedings{F15HPCL,
+ author = {Falcou, Joel},
+ booktitle = {Proceedings of the International Conference on High Performance Computing and Simulation},
+ title = {Designing HPC libraries in the modern C++ world},
+ series = {HPCS'15},
+ year = {2015},
+ pages = {458-459},
+ doi = {10.1109/HPCSim.2015.7237076},
+ url = {http://dx.doi.org/10.1109/HPCSim.2015.7237076},
+ month = jul,
+}
+
+% Scientific computing: C++ versus Fortran by Todd Veldhuizen (1997)
+@article{V97SC,
+ title = {Scientific computing: C++ versus Fortran},
+ author = {Veldhuizen, Todd},
+ journal = {Dr. Dobb's Journal},
+ volume = {22},
+ pages = {34--41},
+ date = {1997-11-01},
+ publisher = {M \& T Publishing, Inc.},
+ location = {San Mateo, CA, USA},
+ url     = {http://www.drdobbs.com/cpp/scientific-computing-c-versus-fortran/184410315},
+ urldate = {2017-08-18},
+}
+% year = {1997},
+%url     = {https://web.archive.org/web/20161230193317/http://www.drdobbs.com:80/cpp/scientific-computing-c-versus-fortran/184410315},
+
+
+@online{VCO98B,
+ author  = {Veldhuizen, Todd and Cummings, Julian and others},
+ year    = {1998},
+ title   = {The Blitz++ library},
+ url     = {http://blitz.sourceforge.net},
+ urldate = {2017-08-24},
+}
+% url     = {https://web.archive.org/web/20170202000739/http://blitz.sourceforge.net:80/},
+
+@inproceedings{V98AiB,
+ author = {Veldhuizen, Todd L.},
+ title = {Arrays in Blitz++},
+ booktitle = {Proceedings of the Second International Symposium on Computing in Object-Oriented Parallel Environments},
+ series = {ISCOPE '98},
+ year = {1998},
+ isbn = {3-540-65387-2},
+ pages = {223--230},
+ numpages = {8},
+ url = {http://dl.acm.org/citation.cfm?id=646894.709708},
+ acmid = {709708},
+ publisher = {Springer-Verlag},
+ address = {London, UK, UK},
+}
+
+% Evaluation of Expression Templates in C++14 by Pavel A. Lebedev (2016)
+@article{L16EoET,
+ author = {Lebedev, Pavel A.},
+ title = {Evaluation of Expression Templates in C++14},
+ journal = {Programming and Computing Software},
+ issue_date = {April 2016},
+ volume = {42},
+ number = {3},
+ month = apr,
+ year = {2016},
+ issn = {0361-7688},
+ pages = {142--154},
+ numpages = {13},
+ url = {http://dx.doi.org/10.1134/S0361768816030051},
+ doi = {10.1134/S0361768816030051},
+ acmid = {2944650},
+ publisher = {Plenum Press},
+ address = {New York, NY, USA},
+}
+
+% Discovering Modern C++: An Intensive Course for Scientists, Engineers, and Programmers by Peter Gottschling (2016)
+@book{G15DMC,
+ author = {Gottschling, Peter},
+ title = {Discovering Modern C++: An Intensive Course for Scientists, Engineers, and Programmers},
+ year = {2015},
+ isbn = {0134383583, 9780134383583},
+ edition = {1st},
+ publisher = {Addison-Wesley Professional},
+}
+
+% Hauptkomponentenanalyse (Auszug aus Analyse mehrdimensionaler Daten) von Fred Böker (2010)
+@unpublished{B10AmD,
+ author = {Böker, Fred},
+ year = {2010},
+ title = {Analyse mehrdimensionaler Daten},
+ location = {Göttingen},
+ institution = {Institut für Statistik und Ökonometrie, Georg-August-Universität Göttingen},
+ howpublished = {Vorlesungsskript},
+}
+
+% An Improved Algorithm for Computing the Singular Value Decomposition by Tony F. Chan (1982)
+% Tony F. Chan (1982): "An Improved Algorithm for Computing the Singular Value Decomposition", http://dl.acm.org/citation.cfm?id=355990
+@article{C82SVD,
+ author = {Chan, Tony F.},
+ title = {An Improved Algorithm for Computing the Singular Value Decomposition},
+ journal = {ACM Transactions on Mathematical Software (TOMS)},
+ issue_date = {March 1982},
+ volume = {8},
+ number = {1},
+ month = mar,
+ year = {1982},
+ issn = {0098-3500},
+ pages = {72--83},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/355984.355990},
+ doi = {10.1145/355984.355990},
+ acmid = {355990},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+% Lloyd N. Trefethen and David Bau, III (1997): Numerical Linear Algebra
+@book{TB97NLA,
+ author = {Trefethen, Lloyd N. and {Bau, III}, David},
+ title = {Numerical Linear Algebra},
+ publisher = {SIAM: Society for Industrial and Applied Mathematics},
+ year = {1997},
+ month = jun,
+ pages = {xii+361},
+ isbn = {0-89871-361-7},
+ isbn-13 = {978-0-89871-361-9},
+}
+
+% Leslie Hogben (2007): Handbook of Linear Algebra
+@book{H07HoLA,
+ author = {Hogben, Leslie},
+ edition = {1st},
+ title = {Handbook of Linear Algebra},
+ isbn = {978-1-58488-510-8},
+ series = {Discrete Mathematics and Its Applications},
+ year = {2007},
+ publisher = {Chapman and Hall/CRC, Taylor~\& Francis Group,~LLC},
+ location = {Boca Raton, FL, USA},
+}
+
+% An Improved Parallel Singular Value Algorithm and Its Implementation for Multicore Hardware by Azzam Haidar and Jakub Kurzak and Piotr Luszczek (2013)
+@inproceedings{HKL13PSVD,
+ author = {Haidar, Azzam and Kurzak, Jakub and Luszczek, Piotr},
+ title = {An Improved Parallel Singular Value Algorithm and Its Implementation for Multicore Hardware},
+ booktitle = {Proceedings of the International Conference on High Performance Computing, Networking, Storage and Analysis},
+ series = {SC '13},
+ year = {2013},
+ isbn = {978-1-4503-2378-9},
+ location = {Denver, Colorado},
+ pages = {90:1--90:12},
+ articleno = {90},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/2503210.2503292},
+ doi = {10.1145/2503210.2503292},
+ acmid = {2503292},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+% David C. Lay (2012): Linear Algebra and Its Applications
+@book{L12LAaiA,
+ title={Linear Algebra and Its Applications},
+ author={Lay, David C.},
+ edition = {4th},
+ isbn={978-0-321-38517-8},
+ lccn={2010048460},
+ year = {2012},
+ publisher = {Addison-Wesley, Pearson Education,~Inc.},
+}
+
+% Strang, Gilbert (2003): Lineare Algebra, Springer Lehrbuch, unter Mitarbeit von Michael Dellnitz
+@book{S03LA,
+ title = {Lineare Algebra},
+ author = {Strang, Gilbert},
+ translator = {Dellnitz, Michael},
+ year = {2003},
+ publisher = {Springer-Verlag Berlin Heidelberg},
+ isbn = {978-3-540-43949-3},
+ doi = {10.1007/978-3-642-55631-9},
+ series = {Springer-Lehrbuch},
+}
+
+% Gilbert Strang (2011): Linear Algebra and Its Applications
+@book{S11LAaIA,
+ title = {Linear Algebra and Its Applications},
+ author = {Strang, Gilbert},
+ year = {2011},
+ publisher = {Brooks Cole},
+ isbn = {978-0-030-10567-8},
+ edition = {4th},
+}
+
+% Basic Linear Algebra Subprograms for Fortran Usage by Charles L. Lawson and Richard J. Hanson and David Ronald Kincaid and Fred T. Krogh (1979)
+@article{LHKK79BLAS,
+ author = {Lawson, Charles L. and Hanson, Richard J. and Kincaid, David Ronald and Krogh, Fred T.},
+ title = {Basic Linear Algebra Subprograms for Fortran Usage},
+ journal = {ACM Transactions on Mathematical Software (TOMS)},
+ issue_date = {Sept. 1979},
+ volume = {5},
+ number = {3},
+ month = sep,
+ year = {1979},
+ issn = {0098-3500},
+ pages = {308--323},
+ numpages = {16},
+ url = {http://doi.acm.org/10.1145/355841.355847},
+ doi = {10.1145/355841.355847},
+ acmid = {355847},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+% An Extended Set of Basic Linear Algebra Subprograms: Model Implementation and Test Programs by Jack Joseph Dongarra and Jeremy Du Croz and Sven Hammarling and Richard J. Hanson (1988)
+@article{DDHH88BLAS2,
+ author = {Dongarra, Jack J. and Du Croz, Jeremy and Hammarling, Sven and Hanson, Richard J.},
+ title = {An Extended Set of Basic Linear Algebra Subprograms: Model Implementation and Test Programs},
+ journal = {ACM Transactions on Mathematical Software (TOMS)},
+ issue_date = {March 1988},
+ volume = {14},
+ number = {1},
+ month = mar,
+ year = {1988},
+ issn = {0098-3500},
+ pages = {1--17},
+ numpages = {17},
+ url = {http://doi.acm.org/10.1145/42288.42291},
+ doi = {10.1145/42288.42291},
+ acmid = {42291},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+% A Set of Level 3 Basic Linear Algebra Subprograms by Jack Joseph Dongarra and Jeremy Du Croz and Sven Hammarling and Iain S. Duff (1990)
+@article{DDHD90BLAS3,
+ author = {Dongarra, Jack Joseph and Du Croz, Jeremy and Hammarling, Sven and Duff, Iain S.},
+ title = {A Set of Level 3 Basic Linear Algebra Subprograms},
+ journal = {ACM Transactions on Mathematical Software (TOMS)},
+ issue_date = {March 1990},
+ volume = {16},
+ number = {1},
+ month = mar,
+ year = {1990},
+ issn = {0098-3500},
+ pages = {1--17},
+ numpages = {17},
+ url = {http://doi.acm.org/10.1145/77626.79170},
+ doi = {10.1145/77626.79170},
+ acmid = {79170},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+% FLAME: Formal Linear Algebra Methods Environment by John A. Gunnels and Fred G. Gustavson and Greg M. Henry and Robert A. van de Geijn (2001)
+@article{GGHG01FLAME,
+ author = {Gunnels, John A. and Gustavson, Fred G. and Henry, Greg M. and van de Geijn, Robert A.},
+ title = {FLAME: Formal Linear Algebra Methods Environment},
+ journal = {ACM Transactions on Mathematical Software (TOMS)},
+ issue_date = {December 2001},
+ volume = {27},
+ number = {4},
+ month = dec,
+ year = {2001},
+ issn = {0098-3500},
+ pages = {422--455},
+ numpages = {34},
+ url = {http://doi.acm.org/10.1145/504210.504213},
+ doi = {10.1145/504210.504213},
+ acmid = {504213},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+@online{NETLIB79BLAS,
+ author  = {Lawson, Charles L. and Hanson, Richard J. and Kincaid, David Ronald and Krogh, Fred T. and Dongarra, Jack J. and Du Croz, Jeremy and Hammarling, Sven and Duff, Iain S. and others},
+ year    = {1979},
+ title   = {BLAS (Basic Linear Algebra Subprograms)},
+ url     = {http://www.netlib.org/blas/},
+ urldate = {2017-08-24},
+}
+%url     = {https://web.archive.org/web/20170815104713/http://www.netlib.org/blas/},
+
+@online{NETLIB92LAPACK,
+ author  = {Anderson, Edward and Bai, Zhaojun and Bischof, Christian Heinrich and Demmel, James Weldon and Dongarra, Jack J. and Du Croz, Jeremy J. and Greenbaum, Anne and Hammarling, Sven and McKenney, A. and Ostrouchov, Susan and Sorensen, Danny C. and others},
+ year    = {1992},
+ title   = {LAPACK - Linear Algebra PACKage},
+ url     = {http://www.netlib.org/lapack/},
+ urldate = {2017-08-24},
+}
+%url     = {https://web.archive.org/web/20170811172028/http://www.netlib.org/lapack/},
+
+@book{AO92LAPACK,
+ author = {Anderson, Edward and Bai, Zhaojun and Bischof, Christian Heinrich and Demmel, James Weldon and Dongarra, Jack J. and Du Croz, Jeremy J. and Greenbaum, Anne and Hammarling, Sven and McKenney, A. and Ostrouchov, Susan and Sorensen, Danny C.},
+ title = {LAPACK's User's Guide},
+ year = {1992},
+ isbn = {0-89871-294-7},
+ publisher = {Society for Industrial and Applied Mathematics},
+ address = {Philadelphia, PA, USA},
+} 
+
+% A class of parallel tiled linear algebra algorithms for multicore architectures by Alfredo Buttaria and Julien Langoub and Jakub Kurzaka and Jack Dongarraa (2009)
+@article{BLKD09PTLAA,
+ author = {Buttari, Alfredo and Langou, Julien and Kurzak, Jakub and Dongarra, Jack},
+ title = {A Class of Parallel Tiled Linear Algebra Algorithms for Multicore Architectures},
+ journal = {Parallel Computing},
+ issue_date = {January, 2009},
+ volume = {35},
+ number = {1},
+ month = jan,
+ year = {2009},
+ issn = {0167-8191},
+ pages = {38--53},
+ numpages = {16},
+ url = {http://dx.doi.org/10.1016/j.parco.2008.10.002},
+ doi = {10.1016/j.parco.2008.10.002},
+ acmid = {1486415},
+ publisher = {Elsevier Science Publishers B. V.},
+ address = {Amsterdam, The Netherlands, The Netherlands},
+} 
+
+@online{BLKDO09PLASMA,
+ author  = {Buttari, Alfredo and Langou, Julien and Kurzak, Jakub and Dongarra, Jack},
+ year    = {2009},
+ title   = {Parallel Linear Algebra Software for Multicore Architectures (PLASMA)},
+ url     = {https://bitbucket.org/icl/plasma},
+ urldate = {2017-08-24},
+}
+%url     = {https://web.archive.org/web/20170812184956/https://bitbucket.org/icl/plasma},
+
+% Dense Linear Algebra Solvers for Multicore with GPU Accelerators by Stanimire Tomov and Rajib Nath and Hatem Ltaief and Jack Dongarra (2010)
+@inproceedings{TNLD10DLAS,
+ author = {Tomov, Stanimire and Nath, Rajib and Ltaief, Hatem and Dongarra, Jack},
+ booktitle = {IEEE International Symposium on Parallel Distributed Processing, Workshops and Phd Forum (IPDPSW)},
+ title = {Dense Linear Algebra Solvers for Multicore with GPU Accelerators},
+ year = {2010},
+ pages = {1-8},
+ doi = {10.1109/IPDPSW.2010.5470941},
+ month = {April},
+}
+
+@online{AGTDHYO10MAGMA,
+ author  = {Anzt, Hartwig and Gates, Mark and Tomov, Stanimire and Dongarra, Jack and Haidar, Azzam and Yamazaki, Ichitaro and others},
+ year    = {2010},
+ title   = {Matrix Algebra on GPU and Multicore Architectures (MAGMA)},
+ url     = {http://icl.cs.utk.edu/magma/},
+ urldate = {2017-08-24},
+}
+%url     = {https://web.archive.org/web/20170819045418/http://icl.cs.utk.edu/magma/},
+
+% libflame: The Complete Reference by Field G. Van Zee (2011) [5.1.0-21]
+@inbook{VCG11FLAME,
+ author = {Van Zee, Field G. and Chan, Ernie and van de Geijn, Robert A.},
+ editor = {Padua, David},
+ title = {libflame},
+ subtitle = {The Complete Reference},
+ bookTitle = {Encyclopedia of Parallel Computing},
+ year = {2011},
+ publisher = {Springer US},
+ address = {Boston, MA},
+ pages = {1010--1014},
+ isbn = {978-0-387-09766-4},
+ doi = {10.1007/978-0-387-09766-4_91},
+ url = {https://doi.org/10.1007/978-0-387-09766-4_91},
+}
+
+% Elemental: A New Framework for Distributed Memory Dense Matrix Computations by Jack Poulson and Bryan Marker and Robert A. van de Geijn and Jeff R. Hammond and Nichols A. Romero (2013)
+@article{PMGHR13E,
+ author = {Poulson, Jack and Marker, Bryan and van de Geijn, Robert A. and Hammond, Jeff R. and Romero, Nichols A.},
+ title = {Elemental: A New Framework for Distributed Memory Dense Matrix Computations},
+ journal = {ACM Transactions on Mathematical Software (TOMS)},
+ issue_date = {February 2013},
+ volume = {39},
+ number = {2},
+ month = feb,
+ year = {2013},
+ issn = {0098-3500},
+ pages = {13:1--13:24},
+ articleno = {13},
+ numpages = {24},
+ url = {http://doi.acm.org/10.1145/2427023.2427030},
+ doi = {10.1145/2427023.2427030},
+ acmid = {2427030},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+@online{NETLIB96SCAL,
+ author  = {Blackford, Laura Susan and Choi, Jaeyoung and Cleary, Andrew James and Petitet, Antoine Paul and Whaley, Richard Clint and Demmel, James Weldon and Dhillon, Inderjit Singh and Stanley, Ken Swenson and Dongarra, Jack J. and Hammarling, Sven and Henry, Greg Mark and Walker, David W. and others},
+ year    = {1996},
+ title   = {ScaLAPACK - Scalable Linear Algebra PACKage},
+ url     = {http://www.netlib.org/scalapack/},
+ urldate = {2017-08-24},
+}
+%url     = {https://web.archive.org/web/20170815032349/http://www.netlib.org/scalapack/},
+
+% ScaLAPACK: A Portable Linear Algebra Library for Distributed Memory Computers - Design Issues and Performance by Laura Susan Blackford et al. (1996)
+@inproceedings{BO96SCAL,
+ author = {Blackford, Laura Susan and Choi, Jaeyoung and Cleary, Andrew James and Petitet, Antoine Paul and Whaley, Richard Clint and Demmel, James Weldon and Dhillon, Inderjit Singh and Stanley, Ken Swenson and Dongarra, Jack J. and Hammarling, Sven and Henry, Greg Mark and Walker, David W.},
+ title = {ScaLAPACK: A Portable Linear Algebra Library for Distributed Memory Computers - Design Issues and Performance},
+ booktitle = {Proceedings of the 1996 ACM/IEEE Conference on Supercomputing},
+ series = {Supercomputing '96},
+ year = {1996},
+ isbn = {0-89791-854-1},
+ location = {Pittsburgh, Pennsylvania, USA},
+ articleno = {5},
+ url = {https://doi.org/10.1145/369028.369038},
+ doi = {10.1145/369028.369038},
+ acmid = {369038},
+ publisher = {IEEE Computer Society},
+ address = {Washington, DC, USA},
+} 
+
+@book{DO97SCAL,
+ author = {Blackford, Laura Susan and Choi, Jaeyoung and Cleary, Andrew James and D'Azeuedo, E. and Demmel, James Weldon and Dhillon, Inderjit Singh and Hammarling, Sven and Henry, Greg Mark and Petitet, Antoine Paul and Stanley, Ken Swenson and Walker, David W. and Whaley, Richard Clint},
+ editor = {Dongarra, Jack J.},
+ title = {ScaLAPACK User's Guide},
+ year = {1997},
+ isbn = {0-89871-397-8},
+ publisher = {Society for Industrial and Applied Mathematics},
+ address = {Philadelphia, PA, USA},
+}
+
+@online{DLR10TAU,
+ author  = {{Deutsches Zentrum für Luft- und Raumfahrt e. V. (DLR)}},
+ year    = {2010},
+ title   = {TAU},
+ url     = {http://tau.dlr.de/},
+ urldate = {2017-08-25},
+}
+
+% Putting Type Annotations to Work by Martin Odersky and Konstantin Läufer (1996)
+@inproceedings{OL96PTAtW,
+ author = {Odersky, Martin and Läufer, Konstantin},
+ title = {Putting Type Annotations to Work},
+ booktitle = {Proceedings of the 23rd ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
+ series = {POPL '96},
+ year = {1996},
+ isbn = {0-89791-769-3},
+ location = {St. Petersburg Beach, Florida, USA},
+ pages = {54--67},
+ numpages = {14},
+ url = {http://doi.acm.org/10.1145/237721.237729},
+ doi = {10.1145/237721.237729},
+ acmid = {237729},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+% Guaranteed Optimization for Domain-Specific Programming by Todd L. Veldhuizen (2004)
+@inproceedings{VGO3fDSP,
+  author    = {Veldhuizen, Todd L.},
+  title     = {Guaranteed Optimization for Domain-Specific Programming},
+  booktitle = {Domain-Specific Program Generation, International Seminar, Dagstuhl Castle, Germany, March 23-28, 2003, Revised Papers},
+  pages     = {307--324},
+  year      = {2003},
+  url       = {https://doi.org/10.1007/978-3-540-25935-0_18},
+  doi       = {10.1007/978-3-540-25935-0_18},
+}
+
+% Generic Programming with Dependent Types by Stephanie Weirich and Chris Casinghino (2010), published in Generic and Indexed Programming by Jeremy Gibbons (2010)
+@inproceedings{WC10GPwDT,
+ author = {Weirich, Stephanie and Casinghino, Chris},
+ title = {Generic Programming with Dependent Types},
+ booktitle = {Proceedings of the 2010 International Spring School Conference on Generic and Indexed Programming},
+ series = {SSGIP'10},
+ year = {2012},
+ editor = {Gibbons, Jeremy},
+ isbn = {978-3-642-32201-3},
+ location = {Oxford, UK},
+ pages = {217--258},
+ numpages = {42},
+ url = {http://dx.doi.org/10.1007/978-3-642-32202-0_5},
+ doi = {10.1007/978-3-642-32202-0_5},
+ acmid = {2369027},
+ publisher = {Springer-Verlag},
+ address = {Berlin, Heidelberg},
+} 
+
+@software{MW16M,
+ title = {MATLAB},
+ version = {9.1.0.441655 (R2016b)},
+ location = {Natick, Massachusetts, USA},
+ organization = {{The MathWorks, Inc.}},
+ year = {2016},
+ url = {https://www.mathworks.com/products/matlab.html},
+ urldate = {2017-09-14},
+}
+
+@manual{MW17MM,
+ title = {MATLAB® Mathematics},
+ location = {Natick, Massachusetts, USA},
+ publisher = {{The MathWorks, Inc.}},
+ year = {2017},
+ version = {R2017a},
+ url = {https://de.mathworks.com/help/pdf_doc/matlab/math.pdf},
+ urldate = {2017-09-14},
+}
+
+% Karl Pearson (1901): "On Lines and Planes of Closest Fit to Systems of Points in Space"
+@book{P1901LaPtS,
+ title = {On Lines and Planes of Closest Fit to Systems of Points in Space},
+ author = {Pearson, Karl},
+ year = {1901},
+ publisher = {University College, London},
+ journal = {Philosophical Magazine},
+ pages = {559-572},
+ number = {2},
+ volume = {6},
+}
+
+% Ansgar Steland (2013): Basiswissen Statistik: Kompaktkurs für Anwender aus Wirtschaft, Informatik und Technik
+@book{S13BS,
+ title = {Basiswissen Statistik},
+ subtitle = {Kompaktkurs für Anwender aus Wirtschaft, Informatik und Technik},
+ author = {Steland, Ansgar},
+ isbn = {978-3-642-37201-8},
+ series = {Springer-Lehrbuch},
+ year = {2013},
+ publisher = {Springer-Verlag Berlin Heidelberg},
+ edition = {3},
+ doi = {10.1007/978-3-642-37201-8},
+}
+
+% Erhard Cramer und Udo Kamps (2014): Grundlagen der Wahrscheinlichkeitsrechnung und Statistik
+@book{CK14GdWS,
+ title = {Grundlagen der Wahrscheinlichkeitsrechnung und Statistik},
+ subtitle = {Ein Skript für Studierende der Informatik, der Ingenieur- und Wirtschaftswissenschaften},
+ author = {Cramer, Erhard and Kamps, Udo},
+ isbn = {978-3-662-43973-9},
+ series = {Springer-Lehrbuch},
+ year = {2014},
+ publisher = {Springer-Verlag Berlin Heidelberg},
+ doi = {10.1007/978-3-662-43973-9},
+ edition = {3},
+}
+
+% Gerd Fischer (2010): Lineare Algebra: Eine Einführung für Studienanfänger
+@book{F10LA,
+ title = {Lineare Algebra},
+ subtitle = {Eine Einführung für Studienanfänger},
+ author = {Fischer, Gerd},
+ isbn = {978-3-8348-9365-9},
+ series = {Grundkurs Mathematik},
+ year = {2010},
+ publisher={{Vieweg+Teubner Verlag} and {Springer Fachmedien Wiesbaden GmbH, Wiesbaden}},
+ doi = {10.1007/978-3-8348-9365-9},
+ edition = {17},
+}
+
+% Kurt-Ulrich Witt (2013): Lineare Algebra für die Informatik - Vektorräume, Gleichungssysteme, Codierung, Quantenalgorithmen.pdf
+% Lineare Algebra für die Informatik - Vektorräume, Gleichungssysteme, Codierung, Quantenalgorithmen von Kurt-Ulrich Witt (2013)
+@book{W13LAVGCQ,
+ title = {Lineare Algebra für die Informatik},
+ subtitle = {Vektorräume, Gleichungssysteme, Codierung, Quantenalgorithmen},
+ author = {Witt, Kurt-Ulrich},
+ isbn = {978-3-658-00188-9},
+ year = {2013},
+ publisher = {Springer Fachmedien Wiesbaden},
+ doi = {10.1007/978-3-658-00189-6},
+}
+
+% Robert Schaback und Holger Wendland (2005): Numerische Mathematik
+@book{SW05NM,
+ title = {Numerische Mathematik},
+ author = {Schaback, Robert and Wendland, Holger},
+ isbn = {978-3-540-21394-9},
+ series = {Springer-Lehrbuch},
+ year = {2005},
+ edition = {5},
+ doi = {10.1007/b137970},
+ publisher={Springer-Verlag Berlin Heidelberg},
+}
+
+% Klemens Burg und Herbert Haf und Friedrich Wille und Andreas Meister (2012): Höhere Mathematik für Ingenieure Band II: Lineare Algebra
+@book{BHWM12LA,
+ title = {Höhere Mathematik für Ingenieure Band II},
+ subtitle = {Lineare Algebra},
+ author = {Burg, Klemens and Haf, Herbert and Wille, Friedrich and Meister, Andreas},
+ isbn = {978-3-8348-1853-9},
+ doi = {10.1007/978-3-8348-2267-3},
+ series = {Teubner-Ingenieurmathematik},
+ publisher = {Vieweg+Teubner Verlag | Springer Fachmedien Wiesbaden},
+ year = {2012},
+ edition = {7},
+}
+
+% Kevin K. Chen and Jonathan H. Tu and Clarence W. Rowley (2014): Variants of dynamic mode decomposition: boundary condition, Koopman, and Fourier analyses
+@article{CTR14VoDMD,
+  author    = {Chen, Kevin K. and H. Tu, Jonathan and Rowley, Clarence W.},
+  title     = {Variants of dynamic mode decomposition: boundary condition, Koopman, and Fourier analyses},
+  journal   = {Journal of Nonlinear Science},
+  volume    = {22},
+  number    = {6},
+  pages     = {887--915},
+  year      = {2012},
+  url       = {https://doi.org/10.1007/s00332-012-9130-9},
+  doi       = {10.1007/s00332-012-9130-9},
+  month     = {12},
+}
+
+% Dennis D. Wackerly and William Mendenhall III and Richard L. Scheaffer (2008): Mathematical Statistics with Applications
+@book{WMS08NSwA,
+ title = {Mathematical Statistics with Applications},
+ author = {Wackerly, Dennis D. and Mendenhall III, William and Scheaffer, Richard L.},
+ isbn = {978-0-495-38508-0},
+ series = {International Student Edition},
+ year = {2008},
+ publisher = {Thomson Learning, Inc.},
+ edition = {7th},
+ address = {Belmont, CA, USA},
+}
+
+% Norbert Henze (2013): Stochastik für Einsteiger: Eine Einführung in die faszinierende Welt des Zufalls
+@book{H13SfE,
+ title = {Stochastik für Einsteiger},
+ subtitle = {Eine Einführung in die faszinierende Welt des Zufalls},
+ author = {Henze, Norbert},
+ isbn = {978-3-658-03077-3},
+ doi = {10.1007/978-3-658-03077-3},
+ edition = {10},
+ year = {2013},
+ publisher = {Springer Fachmedien Wiesbaden},
+}
+
+% Mahmoud Gindiyeh(2013): Anwendung wahrscheinlichkeitstheoretischer Methoden in der linguistischen Informationsverarbeitung
+@thesis{G13AwMlI,
+ author = {Gindiyeh, Mahmoud},
+ title = {Anwendung wahrscheinlichkeitstheoretischer Methoden in der linguistischen Informationsverarbeitung},
+ type = {Dissertation},
+ year = {2013},
+ publisher = {Logos Verlag Berlin},
+ isbn={978-3-8325-3573-5},
+}
+
+% Principal Component Analysis by Ian T. Jolliffe (2002) [2nd ed.]
+@book{J02PCA,
+ title = {Principal Component Analysis},
+ author = {Jolliffe, Ian T.},
+ isbn = {978-1-4419-2999-0},
+ series = {Springer Series in Statistics},
+ year = {2002},
+ publisher = {Springer Science+Business Media New York},
+ edition = {2},
+ doi = {10.1007/b988350},
+}
+
+% On the Early History of the Singular Value Decomposition by Gilbert W Stewart (1993)
+@article{S93HoSVD,
+ author = {Stewart, Gilbert W.},
+ title = {On the Early History of the Singular Value Decomposition},
+ journal = {SIAM Review},
+ issue_date = {Dec. 1993},
+ volume = {35},
+ number = {4},
+ month = dec,
+ year = {1993},
+ issn = {0036-1445},
+ pages = {551--566},
+ numpages = {16},
+ url = {http://dx.doi.org/10.1137/1035134},
+ doi = {10.1137/1035134},
+ acmid = {166599},
+ publisher = {Society for Industrial and Applied Mathematics},
+ address = {Philadelphia, PA, USA},
+} 
+
+% Hauptkomponentenanalyse von Reinhard König und Michael Brosch (2009)
+@online{KB09H,
+ author  = {König, Reinhard und Brosch, Michael},
+ year    = {2009},
+ title   = {Hauptkomponentenanalyse - Principal Component Analysis (PCA)},
+ url     = {ftp://ftp.ifn-magdeburg.de/pub/MBLehre/sv06_130509-ftp.pdf},
+ urldate = {2017-09-14},
+}
+
+% Parametric Datatype-Genericity by Jeremy Gibbons and Ross Paterson (2009)
+@inproceedings{GP09PDG,
+ author = {Gibbons, Jeremy and Paterson, Ross},
+ title = {Parametric Datatype-genericity},
+ booktitle = {Proceedings of the 2009 ACM SIGPLAN Workshop on Generic Programming},
+ series = {WGP '09},
+ year = {2009},
+ isbn = {978-1-60558-510-9},
+ location = {Edinburgh, Scotland},
+ pages = {85--93},
+ numpages = {9},
+ url = {http://doi.acm.org/10.1145/1596614.1596626},
+ doi = {10.1145/1596614.1596626},
+ acmid = {1596626},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+% C++ Template Metaprogramming: Concepts, Tools, and Techniques from Boost and Beyond by David Abrahams and Aleksey Gurtovoy (2004)
+@book{AG04CppTMP,
+ author = {Abrahams, David and Gurtovoy, Aleksey},
+ title = {C++ Template Metaprogramming: Concepts, Tools, and Techniques from Boost and Beyond},
+ series = {C++ In-Depth Series},
+ year = {2004},
+ isbn = {0321227255},
+ isbn-13 = {978-0321227256},
+ publisher = {Addison-Wesley Professional},
+} 
+
+% Modern C++ Design: Generic Programming and Design Patterns Applied - Andrei Alexandrescu (2001)
+@book{A01MCppD,
+ author = {Alexandrescu, Andrei},
+ title = {Modern C++ Design: Generic Programming and Design Patterns Applied},
+ year = {2001},
+ isbn = {0-201-70431-5},
+ publisher = {Addison-Wesley Longman Publishing Co., Inc.},
+ address = {Boston, MA, USA},
+} 
+
+% Using C++ template metaprograms by Todd Veldhuizen (1996)
+% http://www.cs.rpi.edu/~musser/design/blitz/meta-art.html
+% T. Veldhuizen, "Using C++ template metaprograms," C++ Report Vol. 7 No. 4 (May 1995), pp. 36-43.
+@incollection{V96UCppTMP,
+ author = {Veldhuizen, Todd},
+ title = {Using C++ template metaprograms},
+ booktitle = {C++ Gems},
+ editor = {Lippman, Stanley B.},
+ year = {1996},
+ isbn = {1-884842-37-2},
+ pages = {459--473},
+ numpages = {15},
+ url = {http://dl.acm.org/citation.cfm?id=260627.260748},
+ acmid = {260748},
+ publisher = {SIGS Publications, Inc.},
+ address = {New York, NY, USA},
+}
+
+% A Gentle Introduction to Multi-stage Programming by Walid Taha (2004)
+@inbook{T04MSP,
+ author = {Taha, Walid},
+ editor = {Lengauer, Christian and Batory, Don and Consel, Charles and Odersky, Martin},
+ title = {A Gentle Introduction to Multi-stage Programming},
+ bookTitle = {Domain-Specific Program Generation: International Seminar, Dagstuhl Castle, Germany, March 23-28, 2003. Revised Papers},
+ year = {2004},
+ publisher = {Springer Berlin Heidelberg},
+ address = {Berlin, Heidelberg},
+ pages = {30--50},
+ isbn = {978-3-540-25935-0},
+ doi = {10.1007/978-3-540-25935-0_3},
+ url = {https://doi.org/10.1007/978-3-540-25935-0_3},
+}
+
+% Templates for the Solution of Linear Systems: Building Blocks for Iterative Methods by Richard Barrett et al. (1994) [2nd Edition]
+@book{B94TftSoLS,
+ author = {Barrett, Richard and Berry, Michael W. and Chan, Tony F. and Demmel, James and Donato, June and Dongarra, Jack and Eijkhout, Victor and Pozo, Roldan and Romine, Charles and van der Vorst, Henk},
+ title = {Templates for the Solution of Linear Systems: Building Blocks for Iterative Methods},
+ publisher = {Society for Industrial and Applied Mathematics},
+ year = {1994},
+ doi = {10.1137/1.9781611971538},
+ edition = {2nd Edition},
+ isbn = {9780898713282},
+ lccn = {lc94127058},
+}
+
+% Templates for the Solution of Algebraic Eigenvalue Problems: A Practical Guide by Zhaojun Bai et al. (2000)
+@book{B00TftSoAEP,
+ author = {Bai, Zhaojun and Demmel, James and Dongarra, Jack and Ruhe, Axel and van der Vorst, Henk},
+ title = {Templates for the Solution of Algebraic Eigenvalue Problems: A Practical Guide},
+ publisher = {Society for Industrial and Applied Mathematics},
+ year = {2000},
+ doi = {10.1137/1.9780898719581},
+ isbn = {0-89871-471-0},
+ address = {Philadelphia, PA, USA},
+}
+
+% Robert Schaback und Holger Wendland (2005): Numerische Mathematik
+@book{SW05NM,
+ title = {Numerische Mathematik},
+ author = {Schaback, Robert and Wendland, Holger},
+ isbn = {978-3-540-21394-9},
+ issn = {0937-7433},
+ series = {Springer-Lehrbuch},
+ year = {2005},
+ publisher = {Springer-Verlag Berlin Heidelberg},
+ edition = {5},
+ doi = {10.1007/b137970},
+}
+
+% A Divide-and-Conquer Algorithm for the Bidiagonal SVD by Ming Gu and Stanley C. Eisenstat (1995)
+@article{GE95DQSVD,
+ author = {Gu, Ming and Eisenstat, Stanley C.},
+ title = {A Divide-and-Conquer Algorithm for the Bidiagonal SVD},
+ journal = {SIAM Journal on Matrix Analysis and Applications archive},
+ issue_date = {Jan. 1995},
+ volume = {16},
+ number = {1},
+ month = jan,
+ year = {1995},
+ issn = {0895-4798},
+ pages = {79--92},
+ numpages = {14},
+ url = {http://dx.doi.org/10.1137/S0895479892242232},
+ doi = {10.1137/S0895479892242232},
+ publisher = {Society for Industrial and Applied Mathematics},
+ address = {Philadelphia, PA, USA},
+}
+
+% Parallel Algorithms for the Singular Value Decomposition by Michael W. Berry and Dani Mezher and Bernard Philippe and Ahmed Sameh (2005) [Handbook on Parallel Computing and Statistics by Erricos John]
+@inproceedings{B05PAfSVD,
+ author = {Berry, Michael W. and Mezher, Dani and Philippe, Bernard and Sameh, Ahmed},
+ title = {Parallel Algorithms for the Singular Value Decomposition},
+ booktitle = {Handbook of Parallel Computing and Statistics},
+ editor = {Kontoghiorghes, Erricos John},
+ year = {2005},
+ isbn = {978-0-8247-4067-2},
+ pages = {117--164},
+ numpages = {48},
+ publisher = {Chapman \& Hall/CRC},
+ address = {Boca Raton, USA},
+}
+
+% An overview of parallel algorithms for the singular value and symmetric eigenvalue problems by Michael Berry and Ahmed Sameh (1989)
+@article{B89OPA4SVD,
+ author = {Michael Berry and Ahmed Sameh},
+ title = {An overview of parallel algorithms for the singular value and symmetric eigenvalue problems},
+ journal = {Journal of Computational and Applied Mathematics},
+ volume = {27},
+ number = {1},
+ pages = {191--213},
+ year = {1989},
+ note = {Special Issue on Parallel Algorithms for Numerical Linear Algebra},
+ issn = {0377-0427},
+ doi = {https://doi.org/10.1016/0377-0427(89)90366-X},
+ url = {http://www.sciencedirect.com/science/article/pii/037704278990366X},
+}
+
+% Parallel Algorithms for Singular Value Problems by Sven Hammarling (1991)
+@inproceedings{H91PAfSVP,
+ author = {Hammarling, Sven},
+ title = {Parallel Algorithms for Singular Value Problems},
+ booktitle = {Numerical Linear Algebra, Digital Signal Processing and Parallel Algorithms},
+ editor = {Golub, Gene H. and Van Dooren, Paul},
+ year = {1991},
+ isbn = {978-3-642-75536-1},
+ series = {Nato ASI Series F: Computer and Systems Sciences},
+ pages = {173--187},
+ doi = {https://doi.org/10.1007/978-3-642-75536-1_9},
+ publisher = {Springer Berlin Heidelberg},
+ address = {Berlin, Heidelberg},
+}
+
+% Fast Algorithms for Approximating the Singular Value Decomposition by Aditya Krishna Menon and Charles Elkan (2011)
+@article{ME11FASVD,
+ author = {Menon, Aditya Krishna and Elkan, Charles},
+ title = {Fast Algorithms for Approximating the Singular Value Decomposition},
+ journal = {ACM Transactions on Knowledge Discovery from Data (TKDD)},
+ issue_date = {February 2011},
+ volume = {5},
+ number = {2},
+ month = feb,
+ year = {2011},
+ issn = {1556-4681},
+ pages = {13:1--13:36},
+ articleno = {13},
+ numpages = {36},
+ url = {http://doi.acm.org/10.1145/1921632.1921639},
+ doi = {10.1145/1921632.1921639},
+ acmid = {1921639},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {Singular value decomposition, experimental evaluation, low rank approximation},
+} 
+
+% A Systolic Architecture for the Singular Value Decomposition by Richard P. Brent Franklin T. Luk (1982)
+@techreport{B82SAfSVD,
+ author      = {Brent, Richard P. and Luk, Franklin T.},
+ title       = {A Systolic Architecture for the Singular Value Decomposition},
+ institution = {Cornell University},
+ year        = {1982},
+ month       = {09},
+ url         = {http://hdl.handle.net/1813/6361},
+ urldate     = {2018-03-15},
+}
+
+% Computation of the Singular Value Decomposition Using Mesh-Connected Processors by Richard P. Brent and Franklin T. Luk and Charles Van Loan (1982)
+@techreport{B82SVD4MCP,
+ author      = {Brent, Richard P. and Luk, Franklin T. and Van Loan, Charles},
+ title       = {Computation of the Singular Value Decomposition Using Mesh-Connected Processors},
+ institution = {Cornell University},
+ year        = {1982},
+ month       = {03},
+ url         = {http://hdl.handle.net/1813/6367},
+ urldate     = {2018-03-15},
+}
+
+% NEW FAST AND ACCURATE JACOBI SVD ALGORITHM: I by Zlatko Drmac and Kresimir Veselic (2005) [LAWN169]
+@techreport{D05LAWN169,
+ author		= {Zlatko Drma{\v{c}} and Kre{\v{s}}imir Veseli{\'c}},
+ title 		= {NEW FAST AND ACCURATE {JACOBI} {SVD} ALGORITHM: {I}.},
+ type		= {LAPACK Working Note},
+ institution	= {Department of Mathematics, University of Zagreb},
+ number 	= {169},
+ address	= {Bijeni{\v{c}}ka 30, 10000 Zagreb, Croatia.},
+ year		= {2005},
+ month 		= aug,
+ day		= {30},
+ pages		= {39},
+ url		= {http://www.netlib.org/lapack/lawnspdf/lawn169.pdf},
+}
+% Refs.: 
+%  http://ftp.math.utah.edu/pub/tex/bib/lawn.html
+%  http://www.netlib.org/lapack/lawns/downloads/lawn.bib
+%  http://www.netlib.org/bibnet/authors/k/kahan-william-m.html
+
+% New Fast and Accurate Jacobi SVD Algorithm. I by Zlatko Drmač and Krešimir Veselić (2008)
+@article{D08NFAJSVD,
+ author={Drma{\v{c}}, Zlatko and Veseli{\'c}, Kre{\v{s}}imir},
+ title = {New Fast and Accurate Jacobi SVD Algorithm. I},
+ journal = {SIAM Journal on Matrix Analysis and Applications},
+ volume = {29},
+ number = {4},
+ pages = {1322--1342},
+ year = {2008},
+ doi = {https://doi.org/10.1137/050639193},
+ publisher = {SIAM},
+}
+
+% NEW FAST AND ACCURATE JACOBI SVD ALGORITHM: II by Zlatko Drmac and Kresimir Veselic (2005) [LAWN170]
+@techreport{D05LAWN170,
+ author		= {Zlatko Drma{\v{c}} and Kre{\v{s}}imir Veseli{\'c}},
+ title 		= {NEW FAST AND ACCURATE {JACOBI} {SVD} ALGORITHM: {II}.},
+ type		= {LAPACK Working Note},
+ institution	= {Department of Mathematics, University of Zagreb},
+ number 	= {170},
+ address	= {Bijeni{\v{c}}ka 30, 10000 Zagreb, Croatia.},
+ year		= {2005},
+ month 		= aug,
+ day		= {30},
+ pages		= {25},
+ url		= {http://www.netlib.org/lapack/lawnspdf/lawn170.pdf},
+}
+
+% On Efficient Implementations of Kogbetliantz's Algorithm for Computing the Singular Value Decomposition by J. P. Charlier and M. Vanbegin and P. Van Dooren (1987)
+@article{C87KA4SVD,
+ author = {Charlier, J. P. and Vanbegin, M. and Van Dooren, P.},
+ title = {On Efficient Implementations of Kogbetliantz's Algorithm for Computing the Singular Value Decomposition},
+ journal = {Numerische Mathematik},
+ year = {1987},
+ month = {May},
+ day = {01},
+ volume = {52},
+ number = {3},
+ pages = {279--300},
+ issn = {0945-3245},
+ doi = {10.1007/BF01398880},
+ url = {https://doi.org/10.1007/BF01398880},
+}
+
+% Updating Singular Value Decompositions. A Parallel Implementation. by Marc Moonen and Paul Van Dooren and Joos Vandewalle (1989)
+@proceedings{M89USVD,
+ author = {Moonen, Marc and Van Dooren, Paul and Vandewalle, Joos},
+ title = {Updating Singular Value Decompositions. A Parallel Implementation.},
+ journal = {Proc.SPIE},
+ volume = {1152},
+ year = {1989},
+ month = nov,
+ day = 14,
+ series = {Advanced Algorithms and Architectures for Signal Processing IV},
+ eventtitle = {33rd Annual Technical Symposium},
+ location = {San Diego, United States},
+ doi = {10.1117/12.962267},
+ url = {https://doi.org/10.1117/12.962267},
+}
+
+% Reducing the Computations of the Singular Value Decomposition Array Given by Brent and Luk by B. Yang and J. F. Böhme (1991)
+@article{Y91RCSVD,
+ author = {Yang, B. and Böhme, J. F.},
+ title = {Reducing the Computations of the Singular Value Decomposition Array Given by Brent and Luk},
+ journal = {SIAM Journal on Matrix Analysis and Applications},
+ issue_date = {Oct. 1991},
+ volume = {12},
+ number = {4},
+ month = aug,
+ year = {1991},
+ issn = {0895-4798},
+ pages = {713--725},
+ numpages = {13},
+ url = {http://dx.doi.org/10.1137/0612055},
+ doi = {10.1137/0612055},
+ acmid = {120855},
+ publisher = {Society for Industrial and Applied Mathematics},
+ address = {Philadelphia, PA, USA},
+} 
+
+% A Divide and Conquer Algorithm for Computing the Singular Value Decomposition by Elizabeth R. Jessup and D. C. Sorensen (1989)
+@inproceedings{J87DACSVD,
+ author = {Jessup, Elizabeth R. and Sorensen, D. C.},
+ title = {A Divide and Conquer Algorithm for Computing the Singular Value Decomposition},
+ booktitle = {Proceedings of the Third SIAM Conference on Parallel Processing for Scientific Computing},
+ year = {1989},
+ isbn = {0-89871-228-9},
+ pages = {61--66},
+ numpages = {6},
+ url = {http://dl.acm.org/citation.cfm?id=645818.669372},
+ acmid = {669372},
+ publisher = {Society for Industrial and Applied Mathematics},
+ address = {Philadelphia, PA, USA},
+} 
+
+% A Parallel Algorithm for Computing the Singular Value Decomposition of a Matrix by Elizabeth R. Jessup and Danny C. Sorensen (1987)
+% E. JESSUP AND D. SORENSEN, A Parallel Algorithm for Computing the Singular Value Decomposition of a Matrix, Tech. Report ANL/MCS-TM-102, Argonne National Laboratory, Argonne, IL, 1987.
+@techreport{J87PASVD,
+ author		= {Jessup, Elizabeth R. and Sorensen, Danny C.},
+ title 		= {A Parallel Algorithm for Computing the Singular Value Decomposition of a Matrix},
+ type		= {Tech. Report ANL/MCS-TM-102},
+ institution	= {Argonne National Laboratory},
+ address	= {Argonne, IL},
+ year		= {1987},
+ url		= {https://www.cs.colorado.edu/~jessup/SUBPAGES/PS/sorensen.ps.gz},
+}
+
+% A Parallel Algorithm for Computing the Singular Value Decomposition of a Matrix by Elizabeth R. Jessup and Danny C. Sorensen (1994)
+@article{J94PASVD,
+ author = {Jessup, Elizabeth R. and Sorensen, Danny C.},
+ title = {A Parallel Algorithm for Computing the Singular Value Decomposition of a Matrix},
+ journal = {SIAM Journal on Matrix Analysis and Applications},
+ volume = {15},
+ number = {2},
+ pages = {530-548},
+ year = {1994},
+ month = mar,
+ doi = {10.1137/S089547989120195X},
+ url = {https://doi.org/10.1137/S089547989120195X},
+ eprint = {https://doi.org/10.1137/S089547989120195X},
+}
+
+% On Block Kogbetliantz Methods for Computation of the SVD by Vince Fernando and Sven Hammarling (1988)
+@incollection{F88OBKSVD,
+ author = {Fernando, Vince and Hammarling, Sven},
+ chapter = {On Block Kogbetliantz Methods for Computation of the SVD},
+ title = {SVD and Signal Processing},
+ editor = {Deprettere, Ed F.},
+ year = {1988},
+ isbn = {0-444-70439-6},
+ pages = {349--355},
+ numpages = {7},
+ url = {http://dl.acm.org/citation.cfm?id=107302.107318},
+ acmid = {107318},
+ publisher = {North-Holland Publishing Co.},
+ address = {Amsterdam, The Netherlands, The Netherlands},
+} 
+
+% A Stochastic PCA and SVD Algorithm with an Exponential Convergence Rate by Ohad Shamir (2015)
+@inproceedings{S15SPCASVD,
+ author = {Shamir, Ohad},
+ title = {A Stochastic PCA and SVD Algorithm with an Exponential Convergence Rate},
+ booktitle = {Proceedings of the 32nd International Conference on International Conference on Machine Learning},
+ series = {ICML'15},
+ volume = {37},
+ year = {2015},
+ location = {Lille, France},
+ pages = {144--152},
+ numpages = {9},
+ url = {http://dl.acm.org/citation.cfm?id=3045118.3045135},
+ acmid = {3045135},
+ publisher = {JMLR.org},
+} 
+
+% Fast Stochastic Algorithms for SVD and PCA: Convergence Properties and Convexity by Ohad Shamir (2016)
+@inproceedings{S16FSA,
+ author = {Shamir, Ohad},
+ title = {Fast Stochastic Algorithms for SVD and PCA: Convergence Properties and Convexity},
+ booktitle = {Proceedings of the 33rd International Conference on International Conference on Machine Learning},
+ series = {ICML'16},
+ volume = {48},
+ year = {2016},
+ location = {New York, NY, USA},
+ pages = {248--256},
+ numpages = {9},
+ url = {http://dl.acm.org/citation.cfm?id=3045390.3045418},
+ acmid = {3045418},
+ publisher = {JMLR.org},
+}
+
+% A Fast Distributed Principal Component Analysis with Variance Reduction by Shiyuan Shang-Guan and Jianping Yin (2017)
+@inproceedings{SG17FDPCA,
+ author = {Shang-Guan, Shiyuan and  Yin, Jianping},
+ booktitle = {2017 16th International Symposium on Distributed Computing and Applications to Business, Engineering and Science (DCABES)},
+ title = {A Fast Distributed Principal Component Analysis with Variance Reduction},
+ year = {2017},
+ pages = {11-14},
+ doi = {https://doi.org/10.1109/DCABES.2017.10},
+ month = oct,
+ organization = {IEEE},
+ location = {AnYang, He Nan, China},
+}
+
+% A Singular Value Decomposition Updating Algorithm for Subspace Tracking by Marc Moonen and Paul Van Dooren and Joos Vandewalle (1992)
+@article{M92SVDUA,
+ author = {Moonen, Marc and Van Dooren, Paul and Vandewalle, Joos},
+ title = {A Singular Value Decomposition Updating Algorithm for Subspace Tracking},
+ journal = {SIAM Journal on Matrix Analysis and Applications},
+ volume = {13},
+ number = {4},
+ pages = {1015--1038},
+ year = {1992},
+ doi = {https://doi.org/10.1137/0613061},
+}
+
+% Tracking a Few Extreme Singular Values and Vectors in Signal Processing by Pierre Comon and Gene H. Golub (1990)
+@article{C90TfSVV,
+ author = {Comon, Pierre and Golub, Gene H.},
+ title = {Tracking a Few Extreme Singular Values and Vectors in Signal Processing},
+ journal = {Proceedings of the IEEE},
+ year = {1990},
+ volume = {78},
+ number = {8},
+ pages = {1327--1343},
+ doi = {10.1109/5.58320},
+ ISSN = {0018-9219},
+ month = {Aug},
+}
+
+% Generalizations of the singular value and QR decompositions by Bart de Moor (1991)
+@article{dM91GSVQRD,
+ author = {de Moor, Bart},
+ title = {Generalizations of the singular value and QR decompositions},
+ journal = {Signal Processing},
+ volume = {25},
+ number = {2},
+ pages = {135--146},
+ year = {1991},
+ issn = {0165-1684},
+ doi = {https://doi.org/10.1016/0165-1684(91)90059-R},
+ publisher = {Elsevier Science Publishers B.V.},
+}
+
+% Generalized Singular Value Decompositions: A Proposal for a Standardized Nomenclature by Bart LR De Moor and Gene H. Golub (1989)
+% B. De Moor and G. Golub, Generalized singular value decompositions : A proposal for a standardized nomenclature, ESAT--SISTA Report 1989-10, 15 pp., April 1989, Department of Electrical Engineering, Katholieke Universiteit Leuven, Belgium (also Numerical Analysis Project Manuscript NA-89-04, Department of Computer Science, Stanford University). 
+@article{dM89GSVD,
+  title = {Generalized Singular Value Decompositions: A Proposal for a Standardized Nomenclature},
+  author={De Moor, Bart LR and Golub, Gene H.},
+  year = {1989},
+  month = apr,
+  pages = {15 pp.},
+  number = {ESAT--SISTA Report 1989-10},
+  publisher = {Department of Electrical Engineering, Katholieke Universiteit Leuven, Belgium},
+  note = {(also Numerical Analysis Project Manuscript NA-89-04, Department of Computer Science, Stanford University)},
+}
+
+% Improved SVD systolic array and implementation on FPGA by A. Ahmedsaid and Abbes Amira and Ahmed Bouridane (2003)
+@inproceedings{A03SVDFPGA,
+ author = {A. Ahmedsaid and Abbes Amira and Ahmed Bouridane},
+ title = {Improved SVD systolic array and implementation on FPGA},
+ booktitle = {Proceedings. 2003 IEEE International Conference on Field-Programmable Technology (FPT) (IEEE Cat. No.03EX798)},
+ year = {2003},
+ month = dec,
+ pages = {35--42},
+ doi = {https://doi.org/10.1109/FPT.2003.1275729},
+ location = {Tokyo, Japan},
+ publisher = {IEEE},
+}
+
+% A unified algorithm for elementary functions by John Stephen Walther (1971)
+@inproceedings{W71UAfEF,
+ author = {Walther, John Stephen},
+ title = {A unified algorithm for elementary functions},
+ booktitle = {Proceedings of the May 18-20, 1971, Spring Joint Computer Conference},
+ series = {AFIPS '71 (Spring)},
+ year = {1971},
+ location = {Atlantic City, New Jersey},
+ pages = {379--385},
+ numpages = {7},
+ url = {http://doi.acm.org/10.1145/1478786.1478840},
+ doi = {10.1145/1478786.1478840},
+ acmid = {1478840},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+% Updating the Singular Value Decomposition by James R. Bunch and Christopher P. Nielsen (1978)
+@article{B78UtSVD,
+ author = {Bunch, James R. and Nielsen, Christopher P.},
+ title = {Updating the Singular Value Decomposition},
+ journal = {Numerische Mathematik},
+ issue_date = {June 1978},
+ volume = {31},
+ number = {2},
+ day = {01},
+ month = jun,
+ year = {1978},
+ issn = {0029-599X},
+ pages = {111--129},
+ numpages = {19},
+ url = {http://dx.doi.org/10.1007/BF01397471},
+ doi = {10.1007/BF01397471},
+ acmid = {2715863},
+ publisher = {Springer-Verlag New York, Inc.},
+ address = {Secaucus, NJ, USA},
+} 
+
+% Efficient Preprocessing in the Parallel Block-Jacobi SVD Algorithm by Gabriel Okša and Marián Vajteršic (2006)
+@article{O06PPSVD,
+ author = {Ok\v{s}a, Gabriel and Vajter\v{s}ic, Mari\'{a}n},
+ title = {Efficient Preprocessing in the Parallel Block-Jacobi SVD Algorithm},
+ journal = {Parallel Computing - Parallel matrix algorithms and applications (PMAA'04)},
+ issue_date = {February 2006},
+ volume = {32},
+ number = {2},
+ month = feb,
+ year = {2006},
+ issn = {0167-8191},
+ pages = {166--176},
+ numpages = {11},
+ url = {http://dx.doi.org/10.1016/j.parco.2005.06.006},
+ doi = {10.1016/j.parco.2005.06.006},
+ acmid = {1141210},
+ publisher = {Elsevier Science Publishers B. V.},
+ address = {Amsterdam, The Netherlands, The Netherlands},
+}
+
+% Efficient Preprocessing in the Parallel Block-Jacobi SVD Algorithm by Gabriel Okša and Marián Vajteršic (2005) [TR]
+@techreport{O05PPSVD,
+ author		= {Ok\v{s}a, Gabriel and Vajter\v{s}ic, Mari\'{a}n},
+ title		= {Efficient Preprocessing in the Parallel Block-Jacobi SVD Algorithm},
+ institution	= {Department of Scientific Computing, Universität Salzburg},
+ number 	= {2005-02},
+ address	= {Salzburg, Austria},
+ year		= {2005},
+ month 		= jun,
+ type		= {Technical Report},
+}
+
+% A contribution to the theory and practice of the block Kogbetliantz method for computing the SVD by Zvonimir Bujanović and Zlatko Drmač (2012)
+@article{B12CtBKM,
+ author = {Bujanovi{\'{c}}, Zvonimir and Drma{\v{c}}, Zlatko},
+ title = {A contribution to the theory and practice of the block Kogbetliantz method for computing the SVD},
+ journal = {BIT Numerical Mathematics},
+ year = {2012},
+ month = {Dec},
+ day = {01},
+ volume = {52},
+ number = {4},
+ pages = {827--849},
+ issn = {1572-9125},
+ doi = {https://doi.org/10.1007/s10543-012-0388-y},
+ publisher = {Springer Netherlands},
+}
+
+% An Accelerated Divide-and-Conquer Algorithm for the Bidiagonal SVD Problem by Shengguo Li and Ming Gu and Lizhi Cheng and Xuebin Chi and Meng Sun (2014)
+@article{L14ADCSVD,
+ author={Li, Shengguo and Gu, Ming and Cheng, Lizhi and Chi, Xuebin and Sun, Meng},
+ title = {An Accelerated Divide-and-Conquer Algorithm for the Bidiagonal SVD Problem},
+ journal = {SIAM Journal on Matrix Analysis and Applications},
+ publisher = {Society for Industrial and Applied Mathematics},
+ volume = {35},
+ number = {3},
+ pages = {1038--1057},
+ year = {2014},
+ doi = {https://doi.org/10.1137/130945995},
+}
+
+% The Symmetric Eigenproblem and Singular Value Decomposition by James W. Demmel (1997) [Applied Numerical Linear Algebra]
+@inbook{D97SESVD,
+ title = {5. The Symmetric Eigenproblem and Singular Value Decomposition},
+ bookauthor = {Demmel, James W.},
+ booktitle = {Applied Numerical Linear Algebra},
+ pages = {195--264},
+ doi = {10.1137/1.9781611971446.ch5},
+ URL = {https://epubs.siam.org/doi/abs/10.1137/1.9781611971446.ch5},
+ publisher = {Society for Industrial and Applied Mathematics},
+ year = {1997},
+}
+
+% Using cross-product matrices to compute the SVD by Zhongxiao Jia (2006)
+@article{J06CPSVD,
+ author = {Jia, Zhongxiao},
+ title = {Using cross-product matrices to compute the SVD},
+ journal = {Numerical Algorithms},
+ year = {2006},
+ month = {May},
+ day = {01},
+ volume = {42},
+ number = {1},
+ pages = {31--61},
+ issn = {1572-9265},
+ doi = {https://doi.org/10.1007/s11075-006-9022-x},
+ publisher = {Springer Science+Business Media B.V.},
+}
+
+% On inner iterations of Jacobi-Davidson type methods for large SVD computations by Jinzhi Huang and Zhongxiao Jia (2017)
+@article{H17JDSVD,
+ title = {On inner iterations of Jacobi-Davidson type methods for large SVD computations},
+ author = {Huang, Jinzhi and Jia, Zhongxiao},
+ journal = {arXiv preprint arXiv:1711.05372},
+ year = {2017}
+}
+
+% A Jacobi-Davidson Type SVD Method by Michiel E. Hochstenbach (2001)
+@article{H01JDSVD,
+ title = {A Jacobi-Davidson Type SVD Method},
+ author={Hochstenbach, Michiel E.},
+ journal={SIAM Journal on Scientific Computing},
+ volume={23},
+ number={2},
+ pages={606--628},
+ year={2001},
+ publisher={SIAM},
+ doi = {https://doi.org/10.1137/S1064827500372973},
+}
+
+% Accurate and efficient expression evaluation and linear algebra by James Demmel and Ioana Dumitriu and Olga Holtz and Plamen Koev (2008)
+@article{D08AEELA,
+ title = {Accurate and efficient expression evaluation and linear algebra},
+ author = {Demmel, James and Dumitriu, Ioana and Holtz, Olga and Koev, Plamen},
+ volume = {17},
+ doi = {10.1017/S0962492906350015},
+ journal = {Acta Numerica},
+ publisher = {Cambridge University Press},
+ year = {2008},
+ pages = {87--145},
+}
+
+% A Stable And Fast Algorithm For Updating The Singular Value Decomposition by Ming Gu and Stanley C. Eisenstat (1994)
+% "M. Gu AND S. C. EISENSTAT, A fast algorithm for updating the singular value decomposition, manuscript."
+@techreport{G94SFASVD,
+ author = {Gu, Ming and Eisenstat, Stanley C.},
+ title = {A Stable And Fast Algorithm For Updating The Singular Value Decomposition},
+ year = {1994},
+}
+
+% Studies in Numerical Linear Algebra by Ming Gu (1993)
+@phdthesis{G93SiNLA,
+ author = {Gu, Ming},
+ title = {Studies in Numerical Linear Algebra},
+ year = {1993},
+ note = {UMI Order No. GAX94-15857},
+ publisher = {Yale University},
+ address = {New Haven, CT, USA},
+} 
+
+% Parallel Implementation of Singular Value Decomposition (SVD) in Image Compression using Open Mp and Sparse Matrix Representation by J. SairaBanu and Rajasekhara Babu and Reeta Pandey (2015)
+@article{S15PSVDOMP,
+ title = {Parallel Implementation of Singular Value Decomposition (SVD) in Image Compression using Open Mp and Sparse Matrix Representation},
+ author = {SairaBanu, J. and Babu, Rajasekhara and Pandey, Reeta},
+ journal = {Indian Journal of Science and Technology},
+ volume = {8},
+ number = {13},
+ year = {2015},
+ month = jul,
+}
+
+% A Block JRS Algorithm for Highly Parallel Computation of SVDs by Mostafa I. Soliman and Sanguthevar Rajasekaran and Reda Ammar (2007)
+@inproceedings{S07BJRSSVD,
+ author = {Soliman, Mostafa I. and Rajasekaran, Sanguthevar and Ammar, Reda},
+ editor = {Perrott, Ronald and Chapman, Barbara M. and Subhlok, Jaspal and de Mello, Rodrigo Fernandes and Yang, Laurence T.},
+ title = {A Block JRS Algorithm for Highly Parallel Computation of SVDs},
+ booktitle = {High Performance Computing and Communications},
+ year = {2007},
+ publisher = {Springer Berlin Heidelberg},
+ address = {Berlin, Heidelberg},
+ pages = {346--357},
+ isbn = {978-3-540-75444-2},
+}
+
+% A Variable Relaxation Parameter For The Parallel One-Sided JRS SVD Algorithm by Lei Zhao and Qiang Guo (2012)
+@inproceedings{Z12JRSSVD,
+ title = {A Variable Relaxation Parameter For The Parallel One-Sided JRS SVD Algorithm},
+ author = {Zhao, Lei and Guo, Qiang},
+ booktitle = {The 7th International Conference on Computer Science & Education (ICCSE 2012)},
+ pages = {1261--1266},
+ year = {2012},
+ month = {July},
+ organization = {IEEE},
+ doi = {10.1109/ICCSE.2012.6295294},
+ location = {Melbourne, Australia},
+}
+
+% Hierarchical Block Jacobi on a Cluster of Multi-Core Intel Processors by Mostafa I. Soliman and Fatma S. Ahmed (2016)
+@inproceedings{S16HBJ,
+ title = {Hierarchical Block Jacobi on a Cluster of Multi-Core Intel Processors},
+ author = {Soliman, Mostafa I. and Ahmed, Fatma S.},
+ booktitle = {2016 Fourth International Japan-Egypt Conference on Electronics, Communications and Computers (JEC-ECC)},
+ year = {2016},
+ volume = {},
+ number = {},
+ pages = {87--90},
+ doi = {10.1109/JEC-ECC.2016.7518974},
+ month = may,
+ location = {Cairo, Egypt},
+ organization = {IEEE},
+}
+
+% A new algorithm for singular value decomposition and its parallelization by Taro Konda and Yoshimasa Nakamura (2009)
+@article{K09PSVD,
+ author = {Konda, Taro and Nakamura, Yoshimasa},
+ title = {A new algorithm for singular value decomposition and its parallelization},
+ journal = {Parallel Computing},
+ volume = {35},
+ number = {6},
+ pages = {331--344},
+ year = {2009},
+ issn = {0167-8191},
+ doi = {https://doi.org/10.1016/j.parco.2009.02.001},
+ url = {http://www.sciencedirect.com/science/article/pii/S0167819109000258},
+ numpages = {14},
+ publisher = {Elsevier Science Publishers B. V.},
+ address = {Amsterdam, The Netherlands, The Netherlands},
+}
+
+% An evaluation of double Divide and Conquer on a multi–core by Taro Konda and Hiroki Toyokawa and Yoshimasa Nakamura (2008)
+@inproceedings{K08EDDnC,
+ author = {Konda, Taro and Toyokawa, Hiroki and Nakamura, Yoshimasa},
+ booktitle = {International Conference on Informatics Education and Research for Knowledge-Circulating Society (ICKS 2008)},
+ title = {An evaluation of double Divide and Conquer on a multi–core},
+ location = {Kyoto, Japan},
+ year = {2008},
+ pages = {201--204},
+ doi = {10.1109/ICKS.2008.30},
+ ISSN = {},
+ month = jan,
+ organization = {IEEE},
+}
+
+% SVD Based Image Processing Applications: State of The Art, Contributions and Research Challenges by Rowayda A. Sadek (2012)
+@article{S12SVDIPA,
+ title = {SVD Based Image Processing Applications: State of The Art, Contributions and Research Challenges},
+ author = {Sadek, Rowayda A.},
+ journal = {arXiv preprint arXiv:1211.7102},
+ year = {2012},
+ month = nov,
+}
+
+@online{SO15PCA,
+ author     = {{N.~N.}},
+ year       = {2015},
+ title      = {Making sense of principal component analysis, eigenvectors \& eigenvalues},
+ url        = {https://stats.stackexchange.com/a/140579/198769},
+ urldate    = {2018-03-22},
+}
+
+% The Singular Value Decomposition: Its Computation and Some Applications by Virginia C. Klema and Alan J. Laub (1980)
+@article{K80SVD,
+ title = {The Singular Value Decomposition: Its Computation and Some Applications},
+ author = {Klema, Virginia C. and Laub, Alan J.},
+ journal = {IEEE Transactions on Automatic Control},
+ volume = {25},
+ number = {2},
+ pages = {164--176},
+ year = {1980},
+ month = {Apr},
+ publisher = {IEEE},
+ doi = {10.1109/TAC.1980.1102314},
+ issn = {0018-9286},
+}
+
+% The Solution of Singular-Value and Symmetric Eigenvalue Problems on Multiprocessor Arrays by Richard P. Brent and Franklin T. Luk (1985)
+@article{B85SVMA,
+ author={Brent, Richard P. and Luk, Franklin T.},
+ title = {The Solution of Singular-Value and Symmetric Eigenvalue Problems on Multiprocessor Arrays},
+ journal = {SIAM Journal on Scientific and Statistical Computing},
+ volume = {6},
+ number = {1},
+ pages = {69--84},
+ year = {1985},
+ doi = {10.1137/0906007},
+ url = {https://doi.org/10.1137/0906007},
+ publisher = {SIAM},
+}
+
+% Experiments with Parallel One-Sided and Two-Sided Algorithms for SVD by Martin Bečka and Sophie Robert and Marian Vajteršic (1999)
+@inproceedings{B99JSVD,
+ author = {Be{\v{c}}ka, Martin and Robert, Sophie and Vajter{\v{s}}ic, Marian}, 
+ editor = {Zinterhof, Peter and Vajter{\v{s}}ic, Marian and Uhl, Andreas},
+ title = {Experiments with Parallel One-Sided and Two-Sided Algorithms for SVD},
+ booktitle = {Parallel Computation},
+ year = {1999},
+ publisher = {Springer Berlin Heidelberg},
+ address = {Berlin, Heidelberg},
+ pages = {48--57},
+ isbn = {978-3-540-49164-4},
+ doi = {https://doi.org/10.1007/3-540-49164-3_5},
+}
+
+% A Variable Relaxation Parameter For The Parallel One-Sided JRS SVD Algorithm by Lei Zhao and Qiang Guo (2012)
+@inproceedings{Z12POSJRSSVD,
+ title = {A variable relaxation parameter for the parallel one-sided JRS SVD algorithm},
+ author = {Zhao, Lei and Guo, Qiang},
+ booktitle = {2012 7th International Conference on Computer Science Education (ICCSE)},
+ pages = {1261--1266},
+ year = {2012},
+ organization = {IEEE},
+ doi = {10.1109/ICCSE.2012.6295294},
+ month = jul,
+}
+
+% Hierarchical Block Jacobi on a Cluster of Multi-Core Intel Processors by Mostafa I. Soliman and Fatma S. Ahmed (2016)
+@inproceedings{S16HBJ,
+ title = {Hierarchical Block Jacobi on a Cluster of Multi-Core Intel Processors},
+ booktitle = {2016 Fourth International Japan-Egypt Conference on Electronics, Communications and Computers (JEC-ECC)},
+ author={Soliman, Mostafa I. and Ahmed, Fatma S.},
+ pages={87--90},
+ year={2016},
+ organization={IEEE},
+ doi = {10.1109/JEC-ECC.2016.7518974},
+ month = may,
+}
+
+% An Evaluation of Singular Value Computation by the Discrete Lotka-Volterra System by Takata Masami and Kimura Kinji and Iwasaki Masashi and Nakamura Yoshimasa (2005)
+@inproceedings{M05DLVS,
+ title={An Evaluation of Singular Value Computation by the Discrete Lotka-Volterra System},
+ author = {Masami, Takata and Kinji, Kimura and Masashi, Iwasaki and Yoshimasa, Nakamura},
+ booktitle={Proceedings of the International Conference on Parallel and Distributed Processing Techniques and Applications},
+ volume = {2},
+ pages = {410--416},
+ year = {2005}
+}
+
+% An Evaluation of Singular Value Computation by the Discrete Lotka-Volterra System by Takata Masami and Kimura Kinji and Iwasaki Masashi and Nakamura Yoshimasa (2005) [TR]
+@techreport{M05DLVSTR,
+  title = {An Evaluation of Singular Value Computation by the Discrete Lotka-Volterra System},
+  author = {Masami, Takata and Kinji, Kimura and Masashi, Iwasaki and Yoshimasa, Nakamura},
+  journal = {情報処理学会研究報告数理モデル化と問題解決 (MPS)},
+  volume = {2005},
+  number = {65},
+  pages = {25--28},
+  year = {2005},
+  publisher = {一般社団法人情報処理学会},
+}
+
+% Accurate Computation of Singular Values in Terms of Shifted Integrable Schemes by Masashi Iwasaki and Yoshimasa Nakamura (2006)
+@article{I06SVD,
+ title = {Accurate Computation of Singular Values in Terms of Shifted Integrable Schemes},
+ author = {Iwasaki, Masashi and Nakamura, Yoshimasa},
+ journal = {Japan Journal of Industrial and Applied Mathematics},
+ volume = {23},
+ number = {3},
+ pages = {239--259},
+ year = {2006},
+ month = oct,
+ day = {01},
+ publisher = {Springer},
+ issn = {1868-937X},
+ doi = {10.1007/BF03167593},
+ url = {https://doi.org/10.1007/BF03167593}
+}
+
+@online{N13ISVD,
+ author  = {Nakamura, Yoshimasa and Kimura, Kimji and Yamashita, Takumi and Toyokawa, Hiroki and others},
+ year    = {2013},
+ date    = {2013-05-19},
+ title   = {On I-SVD},
+ url     = {http://www-is.amp.i.kyoto-u.ac.jp/lab/en/isvd/},
+ urldate = {2018-03-27},
+}
+
+% A fast and stable algorithm for downdating the singular value decomposition by Jieyuan Zhang and Shengguo Li and Lizhi Cheng and Xiangke Liao and Guangquan Cheng (2014)
+@article{Z14SVD,
+ title = {A fast and stable algorithm for downdating the singular value decomposition},
+ author={Zhang, Jieyuan and Li, Shengguo and Cheng, Lizhi and Liao, Xiangke and Cheng, Guangquan},
+ journal = {Computers \& Mathematics with Applications},
+ publisher={Elsevier},
+ %publisher = {Pergamon Press, Inc.},
+ volume = {68},
+ number = {10},
+ pages = {1421--1430},
+ numpages = {10},
+ year = {2014},
+ month = nov,
+ issue_date = {November 2014},
+ issn = {0898-1221},
+ doi = {https://doi.org/10.1016/j.camwa.2014.09.008},
+ url = {http://www.sciencedirect.com/science/article/pii/S0898122114004568},
+ address = {Tarrytown, NY, USA},
+}
+
+% An improved divide-and-conquer algorithm for the banded matrices with narrow bandwidths by Xiangke Liao and Shengguo Li and Lizhi Cheng and Ming Gu (2016)
+@article{L16DCABM,
+ title = {An improved divide-and-conquer algorithm for the banded matrices with narrow bandwidths},
+ journal = {Computers \& Mathematics with Applications},
+ author = {Liao, Xiangke and Li, Shengguo and Cheng, Lizhi and Gu, Ming},
+ volume = {71},
+ number = {10},
+ year = {2016},
+ issn = {0898-1221},
+ doi = {https://doi.org/10.1016/j.camwa.2016.03.008},
+ url = {http://www.sciencedirect.com/science/article/pii/S0898122116301249},
+ issue_date = {May 2016},
+ month = may,
+ pages = {1933--1943},
+ numpages = {11},
+ acmid = {2937423},
+ %publisher = {Pergamon Press, Inc.},
+ publisher={Elsevier},
+ address = {Tarrytown, NY, USA},
+}
+
+% Accelerating the SVD two stage bidiagonal reduction and divide and conquer using GPUs by Mark Gates and Stanimire Tomov and Jack Dongarra (2018)
+@article{G18GPUSVD,
+ title = {Accelerating the SVD two stage bidiagonal reduction and divide and conquer using GPUs},
+ author={Gates, Mark and Tomov, Stanimire and Dongarra, Jack},
+ journal = {Parallel Computing},
+ publisher={Elsevier},
+ volume = {74},
+ pages = {3--18},
+ year = {2018},
+ note = {Parallel Matrix Algorithms and Applications (PMAA'16)},
+ issn = {0167-8191},
+ doi = {https://doi.org/10.1016/j.parco.2017.10.004},
+ url = {http://www.sciencedirect.com/science/article/pii/S0167819117301758},
+}
+
+% Look-ahead in the two-sided reduction to compact band forms for symmetric eigenvalue problems and the SVD by Rafael Rodríguez-Sánchez and Sandra Catalán and José R. Herrero and Enrique S. Quintana-Ortí and Andrés E. Tomás (2018)
+@article{R18LASVD,
+ author = {Rodr{\'i}guez-S{\'a}nchez, Rafael and Catal{\'a}n, Sandra and Herrero, Jos{\'e} R. and Quintana-Ort{\'i}, Enrique S. and Tom{\'a}s, Andr{\'e}s E.},
+ title = {Look-ahead in the two-sided reduction to compact band forms for symmetric eigenvalue problems and the SVD},
+ journal = {Numerical Algorithms},
+ year = {2018},
+ month = {Mar},
+ day = {01},
+ issn = {1572-9265},
+ doi = {10.1007/s11075-018-0500-8},
+ url = {https://doi.org/10.1007/s11075-018-0500-8},
+ publisher = {Springer US},
+}
+
+% Reduction to Band Form for the Singular Value Decomposition on Graphics Accelerators by Andrés E. Tomás and Rafael Rodríguez-Sánchez and Sandra Catalán and Enrique S. Quintana-Ortí (2018)
+@inproceedings{T18SVDGPU,
+ author = {Tom\'{a}s, Andr{\'e}s E. and Rodr\'{\i}guez-S\'{a}nchez, Rafael and Catal\'{a}n, Sandra and Quintana-Ort\'{\i}, Enrique S.},
+ title = {Reduction to Band Form for the Singular Value Decomposition on Graphics Accelerators},
+ booktitle = {Proceedings of the 9th International Workshop on Programming Models and Applications for Multicores and Manycores},
+ series = {PMAM'18},
+ year = {2018},
+ isbn = {978-1-4503-5645-9},
+ location = {Vienna, Austria},
+ pages = {51--60},
+ numpages = {10},
+ url = {http://doi.acm.org/10.1145/3178442.3178448},
+ doi = {10.1145/3178442.3178448},
+ acmid = {3178448},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+% Bidiagonalization and R-Bidiagonalization: Parallel Tiled Algorithms, Critical Paths and Distributed-Memory Implementation by Mathieu Faverge and Julien Langou and Yves Robert and Jack Dongarra (2017)
+@inproceedings{F17BRBDIAG,
+ title = {Bidiagonalization and R-Bidiagonalization: Parallel Tiled Algorithms, Critical Paths and Distributed-Memory Implementation},
+ booktitle = {IEEE International Parallel and Distributed Processing Symposium (IPDPS)},
+ author = {Faverge, Mathieu and Langou, Julien and Robert, Yves and Dongarra, Jack},
+ year = {2017},
+ month = may,
+ publisher = {IEEE},
+ organization = {IEEE},
+ address = {Orlando, Florida, USA},
+ doi = {10.1109/IPDPS.2017.46},
+}
+
+% A High Performance QDWH-SVD Solver Using Hardware Accelerators by Dalal Sukkari and Hatem Ltaief and David Keyes (2016)
+@article{S16QDWHSVD,
+ author = {Sukkari, Dalal and Ltaief, Hatem and Keyes, David},
+ title = {A High Performance QDWH-SVD Solver Using Hardware Accelerators},
+ journal = {ACM Transactions on Mathematical Software (TOMS)},
+ issue_date = {August 2016},
+ volume = {43},
+ number = {1},
+ month = aug,
+ year = {2016},
+ issn = {0098-3500},
+ pages = {6:1--6:25},
+ articleno = {6},
+ numpages = {25},
+ url = {http://doi.acm.org/10.1145/2894747},
+ doi = {10.1145/2894747},
+ acmid = {2894747},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+% Linear algebra software for large-scale accelerated multicore computing by A. Abdelfattah et al. (2016)
+@article{A16LASW,
+ title = {Linear algebra software for large-scale accelerated multicore computing},
+ author = {Abdelfattah, A. and Anzt, H. and Dongarra, J. and Gates, M. and Haidar, A. and Kurzak, J. and Luszczek, P. and Tomov, S. and Yamazaki, I. and YarKhan, A. and others},
+ volume = {25},
+ doi = {10.1017/S0962492916000015},
+ journal = {Acta Numerica},
+ publisher = {Cambridge University Press},
+ year = {2016},
+ pages = {1--160}
+}
+
+% Multivariate analysis of extremely large ToFSIMS imaging datasets by a rapid PCA method by Peter J. Cumpson and Naoko Sano and Ian W. Fletcher and Jose F. Portoles and Mariela Bravo‐Sanchez and Anders J. Barlow (2015)
+@article{C15MAwPCA,
+ author = {Peter J. Cumpson and Naoko Sano and Ian W. Fletcher and Jose F. Portoles and Mariela Bravo‐Sanchez and Anders J. Barlow},
+ title = {Multivariate analysis of extremely large ToFSIMS imaging datasets by a rapid PCA method},
+ journal = {Surface and Interface Analysis},
+ volume = {47},
+ number = {10},
+ pages = {986--993},
+ doi = {10.1002/sia.5800},
+ url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/sia.5800},
+ eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/sia.5800},
+ year = {2015},
+}
+
+% Parallel Singular Value Decomposition on Heterogeneous Multi-core and Multi-GPU Platforms by Xiaowen Feng and Hai Jin and Ran Zheng and Lei Zhu (2014)
+@inproceedings{F14PSVD,
+ title = {Parallel Singular Value Decomposition on Heterogeneous Multi-core and Multi-GPU Platforms},
+ author = {Feng, Xiaowen and Jin, Hai and Zheng, Ran and Zhu, Lei},
+ booktitle = {Ninth International Conference on Digital Information Management (ICDIM 2014)},
+ pages = {45--50},
+ year = {2014},
+ organization = {IEEE},
+ doi = {10.1109/ICDIM.2014.6991397}, 
+ month = sep,
+}
+
+% An FPGA Implementation of the Hestenes-Jacobi Algorithm for Singular Value Decomposition by Xinying Wang and Joseph Zambreno (2014)
+@inproceedings{W14FPBASVD, 
+ author = {Wang, Xinying and Zambreno, Joseph},
+ booktitle = {2014 IEEE International Parallel \& Distributed Processing Symposium Workshops}, 
+ title = {An FPGA Implementation of the Hestenes-Jacobi Algorithm for Singular Value Decomposition}, 
+ year = {2014},
+ pages = {220--227}, 
+ doi = {10.1109/IPDPSW.2014.29},
+ month = {May},
+ organization = {IEEE},
+ location = {Phoenix, AZ, USA},
+}
+
+% Restructuring the Tridiagonal and Bidiagonal QR Algorithms for Performance by Field G. Van Zee and Robert A. van de Geijn and Gregorio Quintana-Ortí (2014)
+@article{V14TBDIAQR,
+ author = {Van Zee, Field G. and van de Geijn, Robert A. and Quintana-Ort\'{\i}, Gregorio},
+ title = {Restructuring the Tridiagonal and Bidiagonal QR Algorithms for Performance},
+ journal = {ACM Transactions on Mathematical Software (TOMS)},
+ issue_date = {April 2014},
+ volume = {40},
+ number = {3},
+ month = apr,
+ year = {2014},
+ issn = {0098-3500},
+ pages = {18:1--18:34},
+ articleno = {18},
+ numpages = {34},
+ url = {http://doi.acm.org/10.1145/2535371},
+ doi = {10.1145/2535371},
+ acmid = {2535371},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+% Parallel Bidiagonalization of a Dense Matrix by Carlos Campos and David Guerrero and Vicente Hernández and Rui Ralha (2007)
+@article{Campos:2007:PBD:1330176.1330185,
+ author = {Campos, Carlos and Guerrero, David and Hern\'{a}ndez, Vicente and Ralha, Rui},
+ title = {Parallel Bidiagonalization of a Dense Matrix},
+ journal = {SIAM Journal on Matrix Analysis and Applications},
+ issue_date = {October 2007},
+ volume = {29},
+ number = {3},
+ month = oct,
+ year = {2007},
+ issn = {0895-4798},
+ pages = {826--837},
+ numpages = {12},
+ url = {http://dx.doi.org/10.1137/05062809X},
+ doi = {10.1137/05062809X},
+ acmid = {1330185},
+ publisher = {Society for Industrial and Applied Mathematics},
+ address = {Philadelphia, PA, USA}, 
+} 
+
+% A new stable bidiagonal reduction algorithm by Jesse L. Barlow and Nela Bosner and Zlatko Drmač (2005)
+@article{B05BDIAG,
+ title = {A new stable bidiagonal reduction algorithm},
+ author = {Barlow, Jesse L and Bosner, Nela and Drma{\v{c}}, Zlatko},
+ journal = {Linear Algebra and its Applications},
+ volume = {397},
+ pages = {35--84},
+ year = {2005},
+ issn = {0024-3795},
+ doi = {https://doi.org/10.1016/j.laa.2004.09.019},
+ url = {http://www.sciencedirect.com/science/article/pii/S0024379504004276},
+ publisher = {Elsevier},
+}
+
+% Algorithm 977: A QR--Preconditioned QR SVD Method for Computing the SVD with High Accuracy by Zlatko Drmač (2017)
+@article{D17QRSVD,
+ author = {Drma\v{c}, Zlatko},
+ title = {Algorithm 977: A QR--Preconditioned QR SVD Method for Computing the SVD with High Accuracy},
+ journal = {ACM Transactions on Mathematical Software (TOMS)},
+ issue_date = {July 2017},
+ volume = {44},
+ number = {1},
+ month = jul,
+ year = {2017},
+ issn = {0098-3500},
+ pages = {11:1--11:30},
+ articleno = {11},
+ numpages = {30},
+ url = {http://doi.acm.org/10.1145/3061709},
+ doi = {10.1145/3061709},
+ acmid = {3061709},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+% An O(n²) algorithm for the bidiagonal SVD by Benedikt Großer and Bruno Lang (2003)
+@article{G03SVD,
+ title = {An O(n2) algorithm for the bidiagonal SVD},
+ author={Gro{\ss}er, Benedikt and Lang, Bruno},
+ journal = {Linear Algebra and its Applications},
+ volume = {358},
+ number = {1-3},
+ pages = {45--70},
+ year = {2003},
+ issn = {0024-3795},
+ doi = {https://doi.org/10.1016/S0024-3795(01)00398-6},
+ url = {http://www.sciencedirect.com/science/article/pii/S0024379501003986},
+ publisher={Elsevier},
+}
+
+% Highly accurate symmetric eigenvalue decomposition and hyperbolic SVD by Ivan Slapničar (2003)
+@article{S03HSVD,
+ title = {Highly accurate symmetric eigenvalue decomposition and hyperbolic SVD},
+ author = {Slapni{\v{c}}ar, Ivan},
+ journal = {Linear Algebra and its Applications},
+ volume = {358},
+ number = {1-3},
+ pages = {387--424},
+ year = {2003},
+ issn = {0024-3795},
+ doi = {https://doi.org/10.1016/S0024-3795(02)00516-5},
+ url = {http://www.sciencedirect.com/science/article/pii/S0024379502005165},
+ publisher={Elsevier},
+}
+
+% New Accurate Algorithms for Singular Value Decomposition of Matrix Triplets by Zlatko Drmac (2000)
+@article{D00SVD,
+ author={Drmac, Zlatko},
+ title = {New Accurate Algorithms for Singular Value Decomposition of Matrix Triplets},
+ journal = {SIAM Journal on Matrix Analysis and Applications},
+ volume = {21},
+ number = {3},
+ pages = {1026--1050},
+ year = {2000},
+ doi = {10.1137/S0895479897321209},
+ url = {https://doi.org/10.1137/S0895479897321209},
+ publisher={SIAM},
+}
+
+% The decompositional approach to matrix computation by G. W. Stewart (2000)
+@article{S00DMC,
+ author = {Stewart, G. W. },
+ journal = {Computing in Science Engineering},
+ title = {The decompositional approach to matrix computation},
+ year = {2000},
+ volume = {2},
+ number = {1},
+ pages = {50--59},
+ doi = {10.1109/5992.814658},
+ ISSN = {1521-9615},
+ month = {Jan},
+ publisher = {IEEE},
+}
+
+% A Distributed and Incremental SVD Algorithm for Agglomerative Data Analysis on Large Networks by M. A. Iwen and B. W. Ong (2016)
+@article{I16DISVD,
+ title = {A Distributed and Incremental SVD Algorithm for Agglomerative Data Analysis on Large Networks},
+ author = {Iwen, M. A. and Ong, B. W.},
+ journal = {SIAM Journal on Matrix Analysis and Applications},
+ volume = {37},
+ number = {4},
+ pages = {1699--1718},
+ year = {2016},
+ doi = {10.1137/16M1058467},
+ publisher = {SIAM},
+ url = {https://doi.org/10.1137/16M1058467},
+}
+
+% Computing the singular value decomposition on a distributed system of vector processors by Christian H. Bischof (1989)
+@article{B89SVD,
+ title = {Computing the singular value decomposition on a distributed system of vector processors},
+ author = {Bischof, Christian H.},
+ journal = {Parallel Computing},
+ volume = {11},
+ number = {2},
+ pages = {171--186},
+ year = {1989},
+ issn = {0167-8191},
+ doi = {https://doi.org/10.1016/0167-8191(89)90027-6},
+ url  = {http://www.sciencedirect.com/science/article/pii/0167819189900276},
+ publisher={Elsevier},
+}
+
+% BLOCK-JACOBI SVD ALGORITHMS FOR DISTRIBUTED MEMORY SYSTEMS I: HYPERCUBES AND RINGS by Martin Bečka and Marián Vajteršic (1999)
+@article{B99BJSVD1,
+ title = {BLOCK-JACOBI SVD ALGORITHMS FOR DISTRIBUTED MEMORY SYSTEMS I: HYPERCUBES AND RINGS},
+ author = {Be{\v{c}}ka, Martin and Vajter{\v{s}}ic, Mari{\'a}n},
+ journal = {Parallel Algorithms and Applications},
+ volume = {13},
+ number = {3},
+ pages = {265--287},
+ year  = {1999},
+ publisher = {Taylor \& Francis},
+ doi = {10.1080/10637199808947370},
+}
+
+
+% BLOCK-JACOBI SVD ALGORITHMS FOR DISTRIBUTED MEMORY SYSTEMS II: MESHES by Martin Bečka and Marián Vajteršic (1999)
+@article{B99BJSVD2,
+ title = {BLOCK-JACOBI SVD ALGORITHMS FOR DISTRIBUTED MEMORY SYSTEMS II: MESHES},
+ author = {Be{\v{c}}ka, Martin and Vajter{\v{s}}ic, Mari{\'a}n},
+ journal = {Parallel Algorithms and Applications},
+ volume = {14},
+ number = {1},
+ pages = {37--56},
+ year = {1999},
+ publisher = {Taylor \& Francis},
+ doi = {10.1080/10637199808947377},
+}
+
+% Dynamic ordering for a parallel block-Jacobi SVD algorithm by Martin Bečka and Gabriel Okša and Marián Vajteršic (2002)
+@article{B02DOBJSVD,
+ author={Be{\v{c}}ka, Martin and Ok{\v{s}}a, Gabriel and Vajter{\v{s}}ic, Marian},
+ title = {Dynamic ordering for a parallel block-Jacobi SVD algorithm},
+ journal = {Parallel Computing},
+ issue_date = {February 2002},
+ volume = {28},
+ number = {2},
+ month = feb,
+ year = {2002},
+ issn = {0167-8191},
+ pages = {243--262},
+ numpages = {20},
+ url = {http://dx.doi.org/10.1016/S0167-8191(01)00138-7},
+ doi = {10.1016/S0167-8191(01)00138-7},
+ acmid = {611452},
+ publisher = {Elsevier Science Publishers B. V.},
+ address = {Amsterdam, The Netherlands, The Netherlands},
+} 
+
+% ParaView: An End-User Tool for Large-Data Visualization by James Ahrens and Berk Geveci and Charles Law (2005)
+@incollection{A05PV,
+ author = {Ahrens, James and Geveci, Berk and Law, Charles},
+ title = {ParaView: An End-User Tool for Large-Data Visualization},
+ editor = {Hansen, Charles D.  and Johnson, Chris R. },
+ booktitle = {Visualization Handbook},
+ publisher = {Butterworth-Heinemann},
+ address = {Burlington},
+ year = {2005},
+ pages = {717--731},
+ isbn = {978-0-12-387582-2},
+ doi = {https://doi.org/10.1016/B978-012387582-2/50038-1},
+ url = {https://www.sciencedirect.com/science/article/pii/B9780123875822500381},
+}
+
+% The ParaView Guide: A Parallel Visualization Application by Utkarsh Ayachit (2015)
+@book{A15PVG,
+ author = {Ayachit, Utkarsh},
+ title = {The ParaView Guide: A Parallel Visualization Application},
+ year = {2015},
+ isbn = {1930934300, 978-1930934306},
+ publisher = {Kitware, Inc.},
+ address = {USA},
+}
+
+% The Visualization Toolkit by Will Schroeder and Ken Martin and Bill Lorensen (2006) [4th ed.]
+% Schroeder, Will; Martin, Ken; Lorensen, Bill (2006), The Visualization Toolkit (4th ed.), Kitware, ISBN 978-1-930934-19-1
+@book{S06VTK,
+  author = {Schroeder, Will and Martin, Ken and Lorensen, Bill},
+  year = 2006, 
+  title = {The Visualization Toolkit},
+  edition = {4th ed.}, 
+  publisher = {Kitware}, 
+  isbn = {978-1-930934-19-1},
+}
+
+@book{K04KVS,
+ author = {Von Kármán, Theodore},
+ title = {Aerodynamics: Selected Topics in the Light of Their Historical Development},
+ isbn-10 = {0486434850},
+ isbn-13 = {9780486434858},
+ lccn = {2003068845},
+ series = {Dover Books on Aeronautical Engineering Series},
+ year = {2004},
+ publisher = {Courier Corporation},
+}
+%publisher = {Dover Publications},
+
+% Dynamic Generic Programming with Virtual Concepts by Andrea Proli (2016) [git~ed3a569].pdf
+@online{P16VC,
+ author  = {Andrea Proli},
+ year    = {2016},
+ date    = {2016-03-19},
+ title   = {Dynamic Generic Programming with Virtual Concepts},
+ url     = {https://github.com/andyprowl/virtual-concepts/blob/ed3a5690c353b6998abcd3368a9b448f1bb2aa19/draft/Dynamic%20Generic%20Programming%20with%20Virtual%20Concepts.pdf},
+ urldate = {2018-04-25},
+}
+
+% On the relationships between SVD, KLT and PCA by Jan J.Gerbrands (1981)
+@article{G81SVDKLTPCA,
+ author = {Jan J. Gerbrands},
+ title = {On the relationships between SVD, KLT and PCA},
+ journal = {Pattern Recognition},
+ volume = {14},
+ number = {1-6},
+ pages = {375--381},
+ year = {1981},
+ note = {1980 Conference on Pattern Recognition},
+ issn = {0031-3203},
+ doi = {https://doi.org/10.1016/0031-3203(81)90082-0},
+ url = {http://www.sciencedirect.com/science/article/pii/0031320381900820},
+ publisher = {Elsevier},
+}
+
+% SVD, PCA, KLT, CCA, and All That by Sophocles J. Orfanidis (2007)
+@misc{O07SVDPCAKLT,
+ author       = {Sophocles J. Orfanidis},
+ title        = {SVD, PCA, KLT, CCA, and All That},
+ note         = {Lecture notes on the Singular Value Decomposition and its signal processing applications},
+ year         = {2002-2007},
+ organization = {Rutgers University},
+ url          = {http://eceweb1.rutgers.edu/~orfanidi/ece525/},
+}
+
+% Lambda calculus notation with nameless dummies, a tool for automatic formula manipulation, with application to the Church-Rosser theorem by Nicolaas Govert de Bruijn (1972)
+@article{DB72LI,
+ author = {de Bruijn, Nicolaas Govert},
+ title = {Lambda calculus notation with nameless dummies, a tool for automatic formula manipulation, with application to the Church-Rosser theorem},
+ journal = {Indagationes Mathematicae (Proceedings)},
+ volume = {75},
+ number = {5},
+ pages = {381--392},
+ year = {1972},
+ issn = {1385-7258},
+ doi = {https://doi.org/10.1016/1385-7258(72)90034-0},
+ url = {http://www.sciencedirect.com/science/article/pii/1385725872900340}
+}
+
+% https://en.wikipedia.org/wiki/De_Bruijn_index
+@online{W19DBI,
+ author  = {{Wikipedia contributors}},
+ year    = {2019},
+ title   = {De Bruijn index --- {Wikipedia}{,} The Free Encyclopedia},
+ url     = {https://en.wikipedia.org/w/index.php?title=De_Bruijn_index&oldid=883889921},
+ urldate = {2019-02-18}
+}
+
+% BLIS: A Framework for Rapidly Instantiating BLAS Functionality by Field G. Van Zee and Robert A. van de Geijn (2015)
+@article{Z15BLIS,
+ author = {Van Zee, Field G. and van de Geijn, Robert A.},
+ title = {BLIS: A Framework for Rapidly Instantiating BLAS Functionality},
+ journal = {ACM Trans. Math. Softw.},
+ issue_date = {June 2015},
+ volume = {41},
+ number = {3},
+ month = jun,
+ year = {2015},
+ issn = {0098-3500},
+ pages = {14:1--14:33},
+ articleno = {14},
+ numpages = {33},
+ url = {http://doi.acm.org/10.1145/2764454},
+ doi = {10.1145/2764454},
+ acmid = {2764454},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {BLAS, Linear algebra, high-performance, libraries, matrix},
+}
+
+% The BLIS Framework: Experiments in Portability by Field G. Van Zee et al. (2016)
+@article{Z16BLIS,
+ author = {Zee, Field G. Van and Smith, Tyler M. and Marker, Bryan and Low, Tze Meng and Geijn, Robert A. Van De and Igual, Francisco D. and Smelyanskiy, Mikhail and Zhang, Xianyi and Kistler, Michael and Austel, Vernon and Gunnels, John A. and Killough, Lee},
+ title = {The BLIS Framework: Experiments in Portability},
+ journal = {ACM Trans. Math. Softw.},
+ issue_date = {June 2016},
+ volume = {42},
+ number = {2},
+ month = jun,
+ year = {2016},
+ issn = {0098-3500},
+ pages = {12:1--12:19},
+ articleno = {12},
+ numpages = {19},
+ url = {http://doi.acm.org/10.1145/2755561},
+ doi = {10.1145/2755561},
+ acmid = {2755561},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {BLAS, Linear algebra, high performance, libraries, matrix, multiplication},
+}
+
+% Anatomy of High-Performance Many-Threaded Matrix Multiplication by Tyler M. Smith and Robert van de Geijn and Mikhail Smelyanskiy and Jeff R. Hammond and Field G. Van Zee (2014)
+@inproceedings{S14HPMTMM,
+ author = {Smith, Tyler M. and Geijn, Robert van de and Smelyanskiy, Mikhail and Hammond, Jeff R. and Zee, Field G.  Van},
+ title = {Anatomy of High-Performance Many-Threaded Matrix Multiplication},
+ booktitle = {Proceedings of the 2014 IEEE 28th International Parallel and Distributed Processing Symposium},
+ series = {IPDPS '14},
+ year = {2014},
+ isbn = {978-1-4799-3800-1},
+ pages = {1049--1059},
+ numpages = {11},
+ url = {https://doi.org/10.1109/IPDPS.2014.110},
+ doi = {10.1109/IPDPS.2014.110},
+ acmid = {2650640},
+ publisher = {IEEE Computer Society},
+ address = {Washington, DC, USA},
+ keywords = {linear algebra, libraries, high-performance, matrix, BLAS, multicore},
+}
+
+% Analytical Modeling Is Enough for High-Performance BLIS by Tze Meng Low and Francisco D. Igual and Tyler M. Smith and Enrique S. Quintana-Orti (2016)
+@article{L16BLIS,
+ author = {Low, Tze Meng and Igual, Francisco D. and Smith, Tyler M. and Quintana-Orti, Enrique S.},
+ title = {Analytical Modeling Is Enough for High-Performance BLIS},
+ journal = {ACM Trans. Math. Softw.},
+ issue_date = {September 2016},
+ volume = {43},
+ number = {2},
+ month = aug,
+ year = {2016},
+ issn = {0098-3500},
+ pages = {12:1--12:18},
+ articleno = {12},
+ numpages = {18},
+ url = {http://doi.acm.org/10.1145/2925987},
+ doi = {10.1145/2925987},
+ acmid = {2925987},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {Linear algebra, analytical modeling, high performance, libraries, matrix multiplication},
+}
+
+% Implementing High-performance Complex Matrix Multiplication via the 3m and 4m Methods by Field G. Van Zee and Tyler M. Smith (2017)
+@article{Z17HPCMM3M4M,
+ author = {Van Zee, Field G. and Smith, Tyler M.},
+ title = {Implementing High-performance Complex Matrix Multiplication via the 3m and 4m Methods},
+ journal = {ACM Trans. Math. Softw.},
+ issue_date = {July 2017},
+ volume = {44},
+ number = {1},
+ month = jul,
+ year = {2017},
+ issn = {0098-3500},
+ pages = {7:1--7:36},
+ articleno = {7},
+ numpages = {36},
+ url = {http://doi.acm.org/10.1145/3086466},
+ doi = {10.1145/3086466},
+ acmid = {3086466},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {3m, 4m, BLAS, BLIS, DLA, Linear algebra, complex, high-performance, induced, kernel, matrix, micro-kernel, multiplication},
+}
+
+
+
+% Examples:
+%
+% @book{Braeunl:2008:EmbeddedRobotics,
+%  author		= {Bräunl, Thomas},
+%  title		= {Embedded Robotics: Mobile Robot Design and Applications with Embedded Systems},
+%  publisher	= {Springer-Verlag},
+%  edition	= {Third Edition},
+%  year		= {2008},
+%  address	= {Berlin Heidelberg},
+% }
+% 
+% @techreport{Graham:2008:ESA,
+%  author		= {Graham, T. C. Nicholas and Roy, Banani},
+%  title 		= {Methods for Evaluating Software Architecture: A Survey},
+%  institution	= {School of Computing --- Queen's University},
+%  number 	= {2008-545},
+%  address	= {Kingston, Ontario, Canada},
+%  year		= {2008},
+%  month 		= 4,
+% }
+% 
+% @online{UniAugsburg:2009:OCK,
+%  author		= {{Universität Augsburg}},
+%  year		= {2009},
+%  title		= {Organic Computing Kolloquium: Durch Selbstorganisation zu verteilter, sicherer Software},
+%  url		= {http://www.presse.uni-augsburg.de/unipressedienst/2009/okt-dez/2009_225B/},
+%  urldate	= {2014-02-04}
+% }
+% 
+% @unpublished{Asteroth:2012:MCSSeminarDiskretisierung,
+%  author		= {Asteroth, Alexander},
+%  title		= {MCS Seminar 2012/13: Diskretisierung},
+%  note		= {Diskretisierung bei der Simulation Velomobils},
+%  year		= {2012},
+% }
+% 
+% @article{Dijkstra:1959:DijkstraAlgorithm,
+%  author		= {Dijkstra, Edsger Wybe},
+%  title		= {A note on two problems in connexion with graphs},
+%  journal	= {Numerische Mathematik},
+%  volume		= {Volume 1},
+%  number		= {Issue 1}, 
+%  pages		= {269-271},
+%  year		= {1959},
+%  note		= {Online einsehbar unter \url{http://link.springer.com/article/10.1007/BF01386390}},
+% }
+% 
+% @phdthesis{Darms:2007:Sensordatenfusion,
+%  author		= {Darms, Michael},
+%  title		= {Eine Basis-Systemarchitektur zur Sensordatenfusion von Umfeldsensoren für Fahrerassistenzsysteme},
+%  year		= {2007},
+%  school		= {Technische Universität Darmstadt},
+%  address	= {Darmstadt},
+%  month		= 12,
+%  note		= {Online einsehbar unter \url{http://tuprints.ulb.tu-darmstadt.de/914/1/Darms_Michael_FZD_Diss.pdf}}
+% }
+% 
+% 
+% @incollection{Guzzella:2006:AutomotiveControl,
+%  author		= {Guzzella, Lino and Onder, Christopher},
+%  title		= {Past, Present and Future of Automotive Control},
+%  booktitle	= {Control of Uncertain Systems: Modelling, Approximation, and Design},
+%  publisher	= {Springer-Verlag},
+%  year		= {2006},
+%  editor		= {Francis, Bruce A. and Smith, Malcolm C. and Willems, Jan C.},
+%  series		= {329},
+%  pages 		= {163-182},
+%  address	= {Berlin Heidelberg}
+% }
+%
+% References:
+%  https://en.wikibooks.org/wiki/LaTeX/Bibliography_Management#Standard_templates
+%  https://de.wikipedia.org/wiki/BibTeX#Literaturtypen_.28Entry_Types.29
